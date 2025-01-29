@@ -40,3 +40,20 @@ print(list_of_dicts[0])
 print(list_of_dicts[1])
 print(list_of_dicts[0]["name"])
 print(list_of_dicts[1]["hungry"])
+
+
+# List of Dictionaries mapping strings to lists
+str_to_list = {
+    "Fruits": ["apple", "banana", "orange"],
+    "Vegetables": ["carrot", "lettuce", "onion"],
+    "Meats": ["beef", "chicken", "pork"]
+}
+
+print(str_to_list)
+print(str_to_list["Fruits"])
+print(str_to_list["Vegetables"])
+print(str_to_list["Meats"])
+print(str_to_list["Fruits"][0])
+print(str_to_list["Vegetables"][1])
+print(str_to_list["Meats"][2])
+
