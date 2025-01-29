@@ -29,3 +29,14 @@ age_to_name = {26: "Gifty", 31: "Regie", 23: "Bene"}
 print(age_to_name)
 
 print(name_to_hungry["Jane"])
+
+print (name_to_burgers["Neel"])
+
+# LIST of DICTIONARIES
+
+list_of_dicts = [{"name": "Gifty", "hungry": False}, {"name": "Regie", "hungry": True}]
+print(list_of_dicts)
+print(list_of_dicts[0])
+print(list_of_dicts[1])
+print(list_of_dicts[0]["name"])
+print(list_of_dicts[1]["hungry"])
