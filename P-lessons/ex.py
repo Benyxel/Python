@@ -21,3 +21,11 @@ print(name_to_hungry)
 
 name_to_burgers = {"Emily": 1, "Jenny": 2, "Neel": 3}
 print(name_to_burgers)
+
+name_to_name = {"Bernard": "Gifty", "Ike": "Regie", "Eben": "Bene"}
+print(name_to_name)
+
+age_to_name = {26: "Gifty", 31: "Regie", 23: "Bene"}
+print(age_to_name)
+
+print(name_to_hungry["Jane"])
