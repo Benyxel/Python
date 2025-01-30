@@ -16,3 +16,5 @@ print("hahahahaha".replace("a","e"))
 print("Bob poked Bob's dog".replace("Bob","Jon"))
 
 print({"A":1, "B":2}.keys())
+
+print("/".join(["google.com", "mail","hi"]))
