@@ -4,4 +4,3 @@ if name == "Yeboah Bernard":
 else:
     print("Unrecognized user")
 
-# Compare this snippet from P-lessons/forLoops.py:
