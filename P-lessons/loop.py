@@ -7,6 +7,11 @@ if now > nextBirthday:
 print(nextBirthday)
 
 # A while loop
-while datetime.now() < nextBirthday:
-    print("It is your birthday")
+# while datetime.now() < nextBirthday:
+   
 
+x = 0
+while x < 10:
+    print(x)
+    x += 1
+print(x)
