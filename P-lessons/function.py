@@ -52,6 +52,9 @@ result = both_gt3(4, 4)
 print(result)
 
 
-def sum3(list):
-    return sum3(list)
-result = sum3([1, 2, 3])
+# def sum3(lst):
+#     return sum3(lst)
+# result = sum3[1, 2, 3]
+# print(result)
+
+
