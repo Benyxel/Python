@@ -25,3 +25,6 @@ else:
     print("Incorrect!") 
     
 print(f"Your score is {score} out of 2")
+percentage = (score / 2) * 100
+print(f"Your percentage is {percentage}%")
+
