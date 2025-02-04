@@ -14,4 +14,17 @@ else:
 rnumber = random.randint(0,top_of_range)
 print(rnumber)
 
- 
+while True:
+    user_guess = input("Make a guess: ")
+    if user_guess.isdigit():
+        user_guess = int(user_guess)
+    else:
+        print("Please type a number next time.")
+        continue
+
+    if user_guess == rnumber:
+        print("You got it!")
+        break
+    else:
+        print("Try again")
+        continue
