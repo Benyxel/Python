@@ -12,9 +12,10 @@ else:
     quit()
 
 rnumber = random.randint(0,top_of_range)
-print(rnumber)
 
+guesses = 0
 while True:
+    guesses += 1
     user_guess = input("Make a guess: ")
     if user_guess.isdigit():
         user_guess = int(user_guess)
@@ -25,6 +26,10 @@ while True:
     if user_guess == rnumber:
         print("You got it!")
         break
+    elif user_guess > rnumber:
+        print("You were above the number!")
     else:
-        print("Try again")
-        continue
+        print("You were below the number!")
+       
+    
+print(f"You got in {guesses} guesses")

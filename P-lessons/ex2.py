@@ -33,7 +33,10 @@ else:
 rNumber = random.randint(0, DataCollection)
 print(rNumber)
 
+guesses = 0
+    
 while True: 
+    guesses += 1
     anotherGuess = input("Make a Guess: ")
     if anotherGuess.isdigit():
         anotherGuess = int(anotherGuess)
@@ -43,6 +46,11 @@ while True:
     if anotherGuess == rNumber:   
         print("You got it!")
         break
+    elif anotherGuess > rNumber:
+        print("You were above the number")
     else:
-        print("Try again ")
-        continue
+        print("You were below the number")
+        
+        
+
+print(f"You got in {guesses} guesses")
