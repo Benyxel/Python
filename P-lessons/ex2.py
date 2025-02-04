@@ -1,19 +1,48 @@
-lowercase = ("HHAHAHHA")
-print(lowercase.lower())
+# lowercase = ("HHAHAHHA")
+# print(lowercase.lower())
 
-print(" hehehe".lstrip())
+# print(" hehehe".lstrip())
 
-print("he@d.com".endswith(".com"))
+# print("he@d.com".endswith(".com"))
 
-print("Mr. Bean".startswith("Mr."))
-print("supercalifragilistic".find("cali"))
+# print("Mr. Bean".startswith("Mr."))
+# print("supercalifragilistic".find("cali"))
 
-print("mississippi".count("i"))
+# print("mississippi".count("i"))
 
-print("hahahahaha".replace("a", "e"))
+# print("hahahahaha".replace("a", "e"))
 
-print("Bob poked Bob's dog".replace("Bob", "Jon"))
+# print("Bob poked Bob's dog".replace("Bob", "Jon"))
 
-print({"A": 1, "B": 2}.keys())
+# print({"A": 1, "B": 2}.keys())
 
-print("/".join(["google.com", "mail", "hi"]))
+# print("/".join(["google.com", "mail", "hi"]))
+
+import random
+
+DataCollection = input("Enter Number: ")
+
+if  DataCollection.isdigit():
+    DataCollection = int(DataCollection)
+    if DataCollection <= 0:
+        print("please type a larger number next time")
+        quit()
+else: 
+    print("please tpye a number next time")
+    quit()
+rNumber = random.randint(0, DataCollection)
+print(rNumber)
+
+while True: 
+    anotherGuess = input("Make a Guess: ")
+    if anotherGuess.isdigit():
+        anotherGuess = int(anotherGuess)
+    else: 
+        print(" Please type a number next time")
+        continue
+    if anotherGuess == rNumber:   
+        print("You got it!")
+        break
+    else:
+        print("Try again ")
+        continue
