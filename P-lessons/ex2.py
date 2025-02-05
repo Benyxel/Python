@@ -1,3 +1,5 @@
+import random
+
 # lowercase = ("HHAHAHHA")
 # print(lowercase.lower())
 
@@ -18,39 +20,39 @@
 
 # print("/".join(["google.com", "mail", "hi"]))
 
-import random
 
-DataCollection = input("Enter Number: ")
 
-if  DataCollection.isdigit():
-    DataCollection = int(DataCollection)
-    if DataCollection <= 0:
-        print("please type a larger number next time")
-        quit()
-else: 
-    print("please tpye a number next time")
-    quit()
-rNumber = random.randint(0, DataCollection)
-print(rNumber)
+# DataCollection = input("Enter Number: ")
 
-guesses = 0
+# if  DataCollection.isdigit():
+#     DataCollection = int(DataCollection)
+#     if DataCollection <= 0:
+#         print("please type a larger number next time")
+#         quit()
+# else: 
+#     print("please tpye a number next time")
+#     quit()
+# rNumber = random.randint(0, DataCollection)
+# print(rNumber)
+
+# guesses = 0
     
-while True: 
-    guesses += 1
-    anotherGuess = input("Make a Guess: ")
-    if anotherGuess.isdigit():
-        anotherGuess = int(anotherGuess)
-    else: 
-        print(" Please type a number next time")
-        continue
-    if anotherGuess == rNumber:   
-        print("You got it!")
-        break
-    elif anotherGuess > rNumber:
-        print("You were above the number")
-    else:
-        print("You were below the number")
+# while True: 
+#     guesses += 1
+#     anotherGuess = input("Make a Guess: ")
+#     if anotherGuess.isdigit():
+#         anotherGuess = int(anotherGuess)
+#     else: 
+#         print(" Please type a number next time")
+#         continue
+#     if anotherGuess == rNumber:   
+#         print("You got it!")
+#         break
+#     elif anotherGuess > rNumber:
+#         print("You were above the number")
+#     else:
+#         print("You were below the number")
         
         
 
-print(f"You got in {guesses} guesses")
+# print(f"You got in {guesses} guesses")

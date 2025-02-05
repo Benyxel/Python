@@ -1,35 +1,34 @@
 import random
 
-top_of_range = input("Type a number: ")
-
+top_of_range = input("Type a nymber: ")
 if top_of_range.isdigit():
     top_of_range = int(top_of_range)
-    if top_of_range <= 0:
-        print("Please type a number larger than 0 next time.")
+    if top_of_range <=0:
+        print (" Please type a number leager than 0 next time")
         quit()
 else:
-    print("Please type a number next time.")
+    print("please type a number next time")
     quit()
+    
 
-rnumber = random.randint(0,top_of_range)
+rNumber = random.randint(0 , top_of_range)
 
 guesses = 0
+
 while True:
     guesses += 1
-    user_guess = input("Make a guess: ")
-    if user_guess.isdigit():
-        user_guess = int(user_guess)
-    else:
-        print("Please type a number next time.")
-        continue
-
-    if user_guess == rnumber:
-        print("You got it!")
-        break
-    elif user_guess > rnumber:
-        print("You were above the number!")
-    else:
-        print("You were below the number!")
-       
+    guess_input = input("Make a guess: ")
+    if guess_input.isdigit():
+        guess_input = int(guess_input)
     
-print(f"You got in {guesses} guesses")
+        if guess_input == rNumber:
+            print("You got it!")
+            break
+        elif guess_input > rNumber:
+            print("You were above the number")
+        else:
+            print("You were below the number")
+    else:
+        print("Please type a number")
+        
+print(f"You got it in {guesses} guesses")
