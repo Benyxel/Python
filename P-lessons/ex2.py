@@ -56,3 +56,6 @@ import random
         
 
 # print(f"You got in {guesses} guesses")
+
+st = ["a","d","t","g"]
+print(st[-4:-1])  
