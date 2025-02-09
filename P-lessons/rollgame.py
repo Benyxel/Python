@@ -1,18 +1,18 @@
-import random
-min_value = 1 
-max_value = 6
+# import random
+# min_value = 1 
+# max_value = 6
 
-roll = random.randint(min_value, max_value)
+# roll = random.randint(min_value, max_value)
 
+# number = 100
 
+# while  number > 0:
+#     print(float(number))
+#     number //= 2
 
-while True:
-    players = input("Enter a number of players(1-4): ")
-    if players.isdigit():
-        players = int(players)
-        if 1 <= players <= 4:
-            break
+def get_greeting(name):
+    return f"Hi {name }"
 
-
-print(players)
-
+message = get_greeting("Kwame")
+file = open("content.txt", "w")
+file.write(message)

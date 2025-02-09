@@ -63,5 +63,6 @@ def f(value, values):
 	values[0] = 44
 a = 3
 v = [1, 2, 3]
-f(a, v)
+
 print(a, v[0])
+f(a, v)
