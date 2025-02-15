@@ -6,7 +6,7 @@ def count_vowels():
     vowels = "aeiou"
     vowels = vowels.lower()
     for letter in user_input:
-        if letter == vowels:
+        if letter in vowels:
             vowel_count += 1
             
     print("Number of vowels:", vowel_count)
