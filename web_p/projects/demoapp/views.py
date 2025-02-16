@@ -1,14 +1,9 @@
 from django.shortcuts import render
-from .models import demoappModel
-from .form import demoappForm
+from .models import Students
 from django.http import HttpResponse
 
-def create_view(request):
-    form = demoappForm(request.POST or None)
-    if form.is_valid():
-        form.save()
-    context = {'form': form}
-    return HttpResponse("Hello, world!")
+
 
 def index(request):
-    return HttpResponse("Hello, world!")
+    return render(request, 'student/index.html', 
+    {'students': Students.objects.all()})
