@@ -8,7 +8,7 @@ def create_view(request):
     if form.is_valid():
         form.save()
     context = {'form': form}
-    return render(request, 'demoapp/create_view.html', context)
+    return HttpResponse("Hello, world!")
 
 def index(request):
     return HttpResponse("Hello, world!")
