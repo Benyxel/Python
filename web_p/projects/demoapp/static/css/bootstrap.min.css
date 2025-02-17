@@ -16,24 +16,39 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    min-height: 100vh;
     
 }
 .navbar-brand {
     font-size: 20px;
     font-weight: 700;
-    color: #fff;
+    color: #fff; 
+    margin-left: 20px;
 }
 
 .navbar-brand:hover {
     color: #fff;
+    transition: 0.5s;
+    transform: scale(1.1);
+    animation: ease-in-out;
+
+}
+.nav-item a{
+    color: white;
+    }
+
+a:active {
+    color: red;
+
 }
 
-div ul li a{
+div ul li {
+    color: #fff;
     list-style-type: none;
     margin:10px;
     padding: 0;
-    overflow: hidden;
-    background-color: #fff;
+    
+    
 }
 div ul li a:hover {
     background-color: #f1f1f1;
@@ -42,18 +57,14 @@ div ul li a:hover {
     animation: ease-in-out;
 }
 
-.card bg-light{
-    margin: 4px 4px;
+.row{
+    margin: 8px 8px;
 }
 
-footer {
-    background-color: #f8f9fa;
-    padding: 25px;
-    text-align: center;
-}
+
 
 footer div span {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 50;
     color: black;
     
@@ -63,4 +74,8 @@ footer{
     background-color: none;
     padding: 25px;
     text-align: center;
+    margin-top: auto;
+    background-color: #f8f9fa;
+    padding: 25px;
+    
 }

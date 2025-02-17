@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Management</title>
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" rel = "stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body class = "d-flex flex-column h-100">
     <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
-        <a class="navbar-brand" href="#">Student Management</a>
+        <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-graduation-cap fa-lg "></i> Student Management</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -18,10 +20,12 @@
             <ul class="navbar-nav me-auto">
             
             <li class="nav-item">
-                <a class="nav-link" href="#">All Student</a>
+                <a class="nav-link" href="#"><i class="fa-solid fa-list fa-lg"></i>
+                    All Student</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Add Student</a>
+                <a class="nav-link" href="#"><i class="fa-solid fa-plus fa-lg"></i>
+                    Add Student</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">About Us</a>
@@ -32,17 +36,74 @@
         </div>
         </div>
     </nav>
-    <div class=" container-fluid">
+    <div class="container-fluid">
         <h3 class="m-4"> All Students</h3>
         <div class="row">
-            <diV>
+            <diV class="col-12">
+                {% if students %}
                 <div class="card bg-light">
-                    <div class="card-header">Header</div>
+                    <div class="card-header">
+                        <i class="fa-solid fa-list fa-lg"></i>
+                        Stusents Records</div>
                     <div class="card-body">
-                    <h4 class="card-title">Light card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Student Number</th>
+                                    <th scope="col">First Name</th>
+                                    <th scope="col">Last Name</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Field of Study</th>
+                                    <th scope="col">GPA</th>
+                                    <th scope="col">Actions</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    {% for student in students %}
+                                  <tr>
+                                    <th scope="row">{{ student.student_number }}</th>
+                                    <td>{{ student.first_name }}</td>
+                                    <td>{{ student.last_name }}</td>
+                                    <td>{{ student.email }}</td>
+                                    <td>{{ student.field_of_study }}</td>
+                                    <td>{{ student.gpa }}</td>
+                                    <td><button type="button" class="btn btn-success me-1" href="{% url 'view_student' student.id%}" data-bs-toggle="modal" data-bs-target="#myModal{{student.id}}"><i class="fa-solid fa-circle-info fa-lg "></i></button>
+                                    
+                                        <div class="modal" id="myModal{{student.id}}" tabindex="-1" aria-labelledby="myModelLabel1" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h5 class="modal-title"> 
+                                                    {{ student.first_name }} {{ student.last_name }}'s Details
+                                                  </h5>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true"></span>
+                                                  </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  
+                                                </div>
+
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </td>
+                                  </tr>
+                                  {% endfor %}
+                                </tbody>
+                              </table>
+                        </div>
+                    </p>
                     </div>
                 </div>
+                {% else %}
+                <h5 class="alert alert-primary ms-4 me-4">No Student Records</h5>
+                {% endif %}
             </diV>
         </div>
     </div>
