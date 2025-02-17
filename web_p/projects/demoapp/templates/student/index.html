@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
     <title>Student Management</title>
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" rel = "stylesheet">
 </head>
-<body>
+<body class = "d-flex flex-column h-100">
     <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
         <a class="navbar-brand" href="#">Student Management</a>
@@ -17,13 +18,13 @@
             <ul class="navbar-nav me-auto">
             
             <li class="nav-item">
-                <a class="nav-link" href="#">All Students</a>
+                <a class="nav-link" href="#">All Student</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Add Student</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">About Us</a>
             </li>
         
             </ul>
@@ -31,7 +32,24 @@
         </div>
         </div>
     </nav>
-    <h1>Hello World</h1>
+    <div class=" container-fluid">
+        <h3 class="m-4"> All Students</h3>
+        <div class="row">
+            <diV>
+                <div class="card bg-light">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                    <h4 class="card-title">Light card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </diV>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <span >Copyright &copf; <script>document.write(new Date().getFullYear())</script> Benyxel'sDev. </span>
+        </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
