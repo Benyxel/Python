@@ -76,15 +76,30 @@
                                               <div class="modal-content">
                                                 <div class="modal-header">
                                                   <h5 class="modal-title"> 
-                                                    {{ student.first_name }} {{ student.last_name }}'s Details
+                                                   Student: {{ student.first_name }} {{ student.last_name }}
                                                   </h5>
                                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                                                     <span aria-hidden="true"></span>
                                                   </button>
                                                 </div>
                                                 <div class="modal-body">
-                                                  <ul>
-                                                    <li></li>
+                                                  
+                                                  </ul class="list-unstyled">
+                                                    <li>
+                                                      Student Number: <strong> {{ student.student_number }} </strong>
+                                                    </li>
+                                                    <li>
+                                                      First Name: <strong> {{ student.first_name }} </strong>
+                                                    </li>
+                                                    <li>
+                                                      Last Name: <strong> {{ student.last_name }} </strong>
+                                                    </li>
+                                                    <li>
+                                                      Email: <strong> {{ student.email }} </strong>
+                                                    </li>
+                                                    <li>
+                                                      Field of Study: <strong> {{ student.field_of_study }} </strong>
+                                                    </li>
                                                   </ul>
                                                 </div>
 
