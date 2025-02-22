@@ -1,4 +1,4 @@
-'''studentsMlist= []
+studentsMlist= []
 
 def studentData():
     num_of_input = input("How many Students Do you wanna add? ")
@@ -29,7 +29,7 @@ def studentData():
     
     
 
-studentData() '''
+studentData() 
 
 def unique_values():
     # Step 1: Take input for the number of elements
