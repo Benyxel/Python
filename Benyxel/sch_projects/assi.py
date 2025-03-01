@@ -5,8 +5,8 @@ listOfstudents = []
 
 
 def user_input():
-    name = input("Enter your name: ")
-    num_courses = int(input("Enter the number of courses you offer: \n"))
+    name = input(f"Enter student {data_input} name: ")
+    num_courses = int(input(f"Enter the number of courses student {data_input} offer: \n"))
     print(f"\n{name} offers {num_courses} courses.\n")
     list_courses = []
     for course in range(1, num_courses + 1):
@@ -20,9 +20,9 @@ def user_input():
     singleSdata["Courses"] = list_courses
     listOfstudents.append(singleSdata)
 
-    print(listOfstudents)
+
 
 for data_input in range (1, number_of_input +1):
         user_input()
-        
+        print(listOfstudents)
         
