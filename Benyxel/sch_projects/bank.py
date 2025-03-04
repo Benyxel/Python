@@ -23,10 +23,25 @@ class SavingAccount(BankAccount):
         rate = self.interest_rate * self.account_bal
         self.account_bal += rate
         
-        print(f"{amount} Deposited. Interest is {rate} New Balance is {self.account_bal}")
+        print(f"Dear! {self.account_holder}, be informed that the sum of {amount} GHS has been Credited into your account:{self.account_num}. Interest is {rate} Current balance is {self.account_bal}")
+    
+    def withdraw(self, amount):
+        if self.account_bal < amount:
+            print("Insufficient funds")
+        else:
+            self.account_bal -= amount
+            print(f"Dear! {self.account_holder}, be informed that the sum of {amount} GHS has been Debited from your account:{self.account_num}. Current balance is {self.account_bal}")
         
-saving = SavingAccount(23456, "Bernard,")
-saving.deposit(1000)
+    def balance(self,):
+        self.account_bal 
+        print(f"Your total balance is {self.account_bal}")
+
+    
+saving = SavingAccount(23456, "Yeboah B Bernard")
 saving.deposit(2000)
+saving.deposit(2000)
+saving.withdraw(3000)
+saving.balance()
+
 
 
