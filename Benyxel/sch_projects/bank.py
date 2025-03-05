@@ -39,11 +39,16 @@ class SavingAccount(BankAccount):
         print(f"Your total balance is GHS {self.account_bal}")
         
         
-# class CheckingAcount(BankAccount):
-#     def __init__()
-# saving = SavingAccount(23456, "Yeboah B Bernard")
-# saving.deposit(400)
-# saving.withdraw(300)
-# saving.balance()
+class CheckingAcount(BankAccount):
+    def __init__(self,account_num,account_holder,balance=0,overdraft = 500):
+        BankAccount.__init__(self,account_num,account_holder,balance=0,)
+        self.overdraft = overdraft
+        
+    def deposit(self, amount):
+        self.account_bal += amount
+        print(f"Deposited {amount}. New balance is {self.balance}.")    
+        
+checking = CheckingAcount(23456, "Yeboah B Bernard")
+checking.deposit(200)
 
 
