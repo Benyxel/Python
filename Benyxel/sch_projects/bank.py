@@ -23,44 +23,40 @@ class SavingAccount(BankAccount):
         rate = self.interest_rate * self.account_bal
         self.account_bal += rate
         
-        print(f"Dear! {self.account_holder}, be informed that the sum of {amount} GHS has been Credited into your account:{self.account_num}. Interest is {rate} Current balance is {self.account_bal}")
+        print(f"Dear! {self.account_holder},\n be informed that the sum of {amount} GHS has been\n Credited into your account:{self.account_num}.\nInterest is {rate}\n Current balance is {self.account_bal}")
     
     def withdraw(self, amount):
         if self.account_bal < amount:
             print("Insufficient funds")
         else:
             self.account_bal -= amount
-            print(f"Dear! {self.account_holder}, be informed that the sum of {amount} GHS has been Debited from your account:{self.account_num}. Current balance is {self.account_bal}")
+            print(f"Dear! {self.account_holder},\nbe informed that the sum of {amount} GHS has been\nDebited from your account:{self.account_num}.\nCurrent balance is\n{self.account_bal}")
         
     def balance(self,):
         self.account_bal 
         print(f"Your total balance is {self.account_bal}")
-class CheckingAcoount(BankAccount):
+        
+        
+class CheckingAcoount(SavingAccount):
     def __init__(self,account_num,account_holder,balance=0, overdraft=1000):
-        BankAccount.__init__(self,account_num,account_holder,balance=0,)
+        SavingAccount.__init__(self,account_num,account_holder,balance=0,)
         self.limit = overdraft
     
-    def deposit(self,amount):
-        self.account_bal += amount 
-        rate = self.interest_rate * self.account_bal
-        self.account_bal += rate
-        print(f"Dear! {self.account_holder}, be informed that the sum of {amount} GHS has been Credited into your account:{self.account_num}. Interest is {rate} Current balance is {self.account_bal}")
-    
     def withdraw(self, amount):
-        if self.account_bal < amount + self.limit:
-            print("You have Reach your Daily limit")
-        else:
-            self.account_bal -= amount
-            print(f"Dear! {self.account_holder},\n. be informed that the sum of {amount} GHS has been\n. Debited from your account:{self.account_num}.\n. Current balance is {self.account_bal}")
+        if self.account_bal < amount:
+            print("Insufficient funds")
+        
+            if self.account_bal < amount + self.limit:
+                print("You have Reach your Daily limit")
+            else:
+                self.account_bal -= amount
+                print(f"Dear! {self.account_holder}, \n be informed that the sum of {amount} GHS has been \n Debited from your account:{self.account_num}. \n Current balance is {self.account_bal}")
 
 saving = SavingAccount(23456, "Yeboah B Bernard")
 checking = CheckingAcoount(23456, "Yeboah B Bernard")
-saving.deposit(2000)
-saving.deposit(2000)
-"""saving.withdraw(3000)
-saving.balance()"""
-
-checking.withdraw(5668)
+saving.deposit(12000)
+saving.balance()
+checking.withdraw(130)
 
 
 
