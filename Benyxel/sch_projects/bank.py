@@ -33,18 +33,17 @@ class SavingAccount(BankAccount):
             self.account_bal -= amount
             charges = self.charges
             self.account_bal -= charges
-            print(f"Dear! {self.account_holder},\nbe informed that the sum of GHS {amount} has been\nDebited from your account:{self.account_num}\nCharges : GHS {charges},\nCurrent balance is  GHS {self.account_bal}.")
+            print(f"Dear! {self.account_holder},\nbe informed that the sum of GHS {amount} has been\nDebited from your account:{self.account_num}\nCharges : GHS {charges},\nCurrent balance is  GHS {self.account_bal}")
         
     def balance(self,):
-        self.account_bal 
-        print(f"Your total balance is GHS {self.account_bal}.")
+        print(f"Your total balance is GHS {self.account_bal}")
         
         
-
-
-saving = SavingAccount(23456, "Yeboah B Bernard")
-saving.deposit(400)
-saving.withdraw(300)
-
+# class CheckingAcount(BankAccount):
+#     def __init__()
+# saving = SavingAccount(23456, "Yeboah B Bernard")
+# saving.deposit(400)
+# saving.withdraw(300)
+# saving.balance()
 
 
