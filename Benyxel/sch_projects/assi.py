@@ -1,3 +1,4 @@
+import json
 
 number_of_input = int(input("Enter a number of input: "))
 listOfstudents = []
@@ -26,3 +27,5 @@ for data_input in range (1, number_of_input +1):
         user_input()
         print(listOfstudents)
         
+with open("Stud.json","w") as output:
+    json.dump(listOfstudents,output) 
