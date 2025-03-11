@@ -1,0 +1,46 @@
+[
+    {
+        "name": "Yeboah Boanu Bernard",
+        "Total courses": 3,
+        "Courses": [
+            "Python",
+            "Java",
+            "React"
+        ]
+    },
+    {
+        "name": "Appiah Kubi",
+        "Total courses": 3,
+        "Courses": [
+            "Graphic Designer",
+            "ADobe xd",
+            "Figma"
+        ]
+    },
+    {
+        "name": "Rose kubina",
+        "Total courses": 3,
+        "Courses": [
+            "Vue",
+            "Preact",
+            "Python"
+        ]
+    },
+    {
+        "name": "Rose Appiah",
+        "Total courses": 2,
+        "Courses": [
+            "C#",
+            "JS"
+        ]
+    },
+    {
+        "name": "kusi Eric",
+        "Total courses": 3,
+        "Courses": [
+            "Python",
+            "Vite",
+            "Angylar"
+        ]
+    }
+]

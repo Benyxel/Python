@@ -24,11 +24,12 @@ class SavingAccount(BankAccount):
         self.charges= charges 
     
     def deposit(self,amount):
+        input = 
         self.account_bal += amount 
         rate = self.interest_rate * self.account_bal
         self.account_bal += rate
         
-        print(f"\nDear! {self.account_holder}\nbe informed that the sum of GHS {amount} has been\nCedited into your account:{self.account_num}.\nInterest rate is GHS {rate},\nCurrent balance is GHS {self.account_bal}.\n")
+        print(f"\nDear! {self.account_holder}\nbe informed that the sum of GHS {amount} has been\nCredited into your account:{self.account_num}.\nInterest rate is GHS {rate},\nCurrent balance is GHS {self.account_bal}.\n")
     
     def withdraw(self, amount):
         charges = self.charges
@@ -55,6 +56,7 @@ class CheckingAcount(SavingAccount):
     
         
     def withdraw(self, amount):
+        
         limit = self.overdraft
         limit = 500
         if self.account_bal < amount:

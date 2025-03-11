@@ -1,6 +1,6 @@
 studentsMlist= []
 
-'''def studentData():
+def studentData():
     num_of_input = input("How many Students Do you wanna add? ")
     if not num_of_input.isdigit():
         print("You must enter a valid number to start the operation")
@@ -24,13 +24,9 @@ studentsMlist= []
                 'Course': num_Course,
                 'AllCourses': total_course
             }
-    studentsMlist.append(students)
-        print(studentsMlist)
-        
-    
-
-studentData() '''
-
+    studentsMlist.append(students)       
+studentData() 
+print(studentsMlist)
 '''def unique_values():
 
     num_of_elements = input("How many elements do you want to add to the list? ")
@@ -51,7 +47,7 @@ studentData() '''
         unique_values_set = set(elements_list)
         unique_values_list = list(unique_values_set)
         print("Unique values in the list are:", unique_values_list)
-unique_values()'''
+unique_values()
 
 values = input("Enter value with space as ").strip().split()
 non_unique=[]
@@ -66,4 +62,4 @@ for i in conv_values:
     else:
         non_unique.append(i)
 print(f"unique: {unique}")
-print(f"not unique: {non_unique}")
+print(f"not unique: {non_unique}")'''
