@@ -24,7 +24,7 @@ class SavingAccount(BankAccount):
         self.charges= charges 
     
     def deposit(self,amount):
-        input = 
+        
         self.account_bal += amount 
         rate = self.interest_rate * self.account_bal
         self.account_bal += rate
@@ -77,5 +77,6 @@ saving.withdraw(96)
 checking.deposit(1200)
 checking.withdraw(10)
 checking.withdraw(1000)
+
 
 
