@@ -72,8 +72,8 @@ class CheckingAcount(SavingAccount):
 saving = SavingAccount(23456, "Yeboah B Bernard,")      
 checking = CheckingAcount(23456, "Yeboah B Bernard,")
 
-saving.deposit(100)
-saving.withdraw(96)
+
+checking.withdraw(1200)
 checking.deposit(1200)
 checking.withdraw(10)
 checking.withdraw(1000)
