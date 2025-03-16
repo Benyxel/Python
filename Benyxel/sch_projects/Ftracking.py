@@ -8,7 +8,7 @@ class AdminUpdate():
         trackNum = trackNum
         status = status
         self.tracking.append({"TrackingNum":trackNum,"Sender":name,"Status":status})
-        print(f"Tracking number {trackNum} has been added successfully")
+        print(f"Tracking number {trackNum} has been added successfully \n")
         
         
 
@@ -24,7 +24,7 @@ class UserAdd(AdminUpdate):
         quantity = quantity
         product = product
         self.tracking.append({"TrackingNum":trackNum,"Sender":name,"Quantity":quantity,"Product":product})
-        print(f"Tracking number {trackNum} has been added successfully with {quantity} quantity username {name} \n ")
+        print(f"Tracking number {trackNum} has been added successfully with {quantity} quantity username {name}\n ")
       
         
         
@@ -43,14 +43,19 @@ class UserAdd(AdminUpdate):
 adding = AdminUpdate()
 user = UserAdd()
 
-trackNum = input("Enter tracking number: ")
-name = input("Enter name: ")
-status = input("Enter status: ")
-adding.adminAdd(trackNum,name,status)
+print("Admin-add")
+trackNum = input("Admin Enter tracking number: ").upper()
+name = input("Enter user first name: ")
+status = input("Enter Package status: ")
+adding.adminAdd(trackNum,name,status ) 
 
-trackNum = input("Enter tracking number: ")
+print("useradd")
+trackNum = input("Enter tracking number: ").upper()
 name = input("Enter name: ")
-quantity = input("Enter quantity: ")
+quantity = int(input("Enter quantity: "))
 product = input("Enter product: ")
 user.userAdd(trackNum,name,quantity,product)
 
+print("usercheck\n")
+trackNumCheck = input(f"{name} Enter tracking number to check: \n").upper()
+user.userCheck(trackNumCheck)
