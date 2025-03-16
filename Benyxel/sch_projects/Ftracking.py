@@ -3,13 +3,13 @@ class AdminUpdate():
         
         self.tracking = []
         
-    def add_tracking(self,track,name,status):
+    def adminAdd(self,trackNum,name,status):
         name = name
-        track = track
+        trackNum = trackNum
         status = status
-        self.tracking.append({"TrackingNum":track,"Sender":name,"Status":status})
-        print(f"Tracking number {track} has been added successfully")
-        print(self.tracking)
+        self.tracking.append({"TrackingNum":trackNum,"Sender":name,"Status":status})
+        print(f"Tracking number {trackNum} has been added successfully")
+        
         
 
 
@@ -43,11 +43,14 @@ class UserAdd(AdminUpdate):
 adding = AdminUpdate()
 user = UserAdd()
 
+trackNum = input("Enter tracking number: ")
+name = input("Enter name: ")
+status = input("Enter status: ")
+adding.adminAdd(trackNum,name,status)
 
-adding.add_tracking("YT6734773403949","Appiah", "received")
-adding.add_tracking("12645","Mensah", "Shipped")
-user.userAdd("12645","Bernard",1,"Laptop")
+trackNum = input("Enter tracking number: ")
+name = input("Enter name: ")
+quantity = input("Enter quantity: ")
+product = input("Enter product: ")
+user.userAdd(trackNum,name,quantity,product)
 
-user.userAdd("YT6734773403949","Bernard",92,"T-rolls")
-user.userCheck("12645")
-user.userCheck("YT6734773403949")
