@@ -13,7 +13,7 @@ class SAddressR():
             combined_address = f"{shippingAddress[0]}{name} "
             shippingAddress.append(combined_address)
             print(f"Dear {name}! Your Shipping Address is:\n({combined_address})")
-            print(f"Your shipping mark is M856{name}")
+            print(f"Your shipping mark is M856:{name}")
             print(f"NOTE: please add all your tracking numbers at the add a tracking number section")
             
 
