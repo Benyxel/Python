@@ -23,7 +23,7 @@ class SavingAccount(BankAccount):
         self.interest_rate = interest_rate 
         self.charges= charges 
         
-    abstractmethod
+    
     def deposit(self,amount):
         
         self.account_bal += amount 
