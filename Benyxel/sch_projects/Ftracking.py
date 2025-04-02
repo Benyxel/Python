@@ -37,7 +37,7 @@ class UserAdd(AdminUpdate):
                 found = True
                 break
         if not found:
-            print(f"Tracking number {trackNum} is not found, 'this could be the package is not updated yet or still in transit' \n")
+            print(f"Tracking number {trackNum} is not found, 'this could be that the package is not updated yet or still in transit' \n")
                 
                 
 adding = AdminUpdate()
@@ -45,7 +45,7 @@ user = UserAdd()
 
 print("Admin-add")
 trackNum = input("Admin Enter tracking number: ").upper()
-name = input("Enter user first name: ")
+name = input("Enter user name: ")
 status = input("Enter Package status: ")
 adding.adminAdd(trackNum,name,status ) 
 
