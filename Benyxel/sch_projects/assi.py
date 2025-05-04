@@ -27,8 +27,8 @@ for data_input in range (1, number_of_input +1):
         user_input()
         # print(listOfstudents)
         
-with open("Stud.json","w") as output:
-    json.dump(listOfstudents,output, indent=4) 
+with open("Stud.json","a") as output:
+    json.dumps(listOfstudents,output, indent=4) 
     
 """
 load loads a json string and converts it to a python object.
@@ -36,3 +36,8 @@ loads is used when you have a json string and want to convert it to a python obj
 dump pushes a python object to a json string and saves it to a file.
 dumps is used when you have a python object and want to convert it to a json string.
 """
+
+
+# with open('stud.json', 'r') as read:
+#     json.loads('name')
+# print(read)
