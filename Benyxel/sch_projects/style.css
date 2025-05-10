@@ -16,7 +16,7 @@ body{
     
 }
 
-.shape{
+.shape {
    width: 300px;
    font-weight: 600;
    padding: 10px;
@@ -29,12 +29,7 @@ body{
    margin-bottom: 15px;
 }
 
-#shapebd{
-    margin-top: 10px;
-    text-align: center;
-    border: none;
-    background: linear-gradient(rgb(241, 123, 241), rgb(76, 76, 150));
-}
+
 #shapebt{
     margin-top: 10px;
     text-align: center;
@@ -50,7 +45,6 @@ body{
 }
 
 .signin{
-
     margin-bottom: 50px;
     font-family: poppins;
 }
@@ -59,24 +53,17 @@ body{
     color: white;
     text-align: center;
     margin-top: 15px;
-    
-    
 }
 
-.btn1{
+.btn1 {
     background: none;
     color: white;
     border: none;
-    
+    cursor: pointer
 }
 
 
-.btn2{
-    background: none;
-    color: white;
-    border: none;
-    
-}
+
 
 .bx{
     font-size: 20px;
@@ -107,3 +94,9 @@ body{
     
 }
 
+#shapebd {
+    margin-top: 10px;
+    text-align: center;
+    border: none;
+    background: linear-gradient(rgb(241, 123, 241), rgb(76, 76, 150));
+}
