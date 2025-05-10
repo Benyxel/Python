@@ -1,5 +1,8 @@
 * {
     margin: 0;
+    font-family: "Share Tech", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 body{
     background-color: #000c17;
@@ -31,6 +34,8 @@ body{
 
 
 #shapebt{
+    display: flex;
+    justify-content: center;
     margin-top: 10px;
     text-align: center;
     
@@ -39,23 +44,25 @@ body{
 
 .Tc {
     color: #ffffff;
-    font-weight: 900;
-    font-family: poppins;
-    margin-bottom: 10px;
+    font-size: 40px;
+    margin-bottom: 20px;
+   
 }
 
 .signin{
-    margin-bottom: 50px;
-    font-family: poppins;
-}
+    margin-bottom: 10px;}
 
 .downT {
+    font-size: 18px;
     color: white;
     text-align: center;
     margin-top: 15px;
 }
-
+ .CA{
+    cursor: pointer;
+}
 .btn1 {
+    font-size: 18px;
     background: none;
     color: white;
     border: none;
@@ -66,7 +73,7 @@ body{
 
 
 .bx{
-    font-size: 20px;
+    font-size: 25px
 }
 
 .cilcle1 {
