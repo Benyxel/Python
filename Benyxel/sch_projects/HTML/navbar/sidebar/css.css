@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    background-color: #ffffff;
+    padding: 20px;
+
+}
+
+.right-side{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.right-side h1{
+    margin-right: 30px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.right-side input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 300px;
+}
+
+.bi-search {
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.left-side{
+    display: flex;
+    align-items: center;
+}
+
+.bi{
+    font-size: 30px;
+    margin-right: 20px;
+    color: #666666;
+
+}
+
+.left-side img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 100vh;
+    padding-top: 30px;
+    padding-left: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+.sections{
+    display: flex;
+    flex-direction: grid;
+    align-items: center;
+    margin-right: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+}
+
+.sections h1{
+
+    font-weight: 400;
+    font-size: 20px;
+    
+}
+
+.sections:hover{
+    background-color: #1c17bb;
+    color: white;
+}
+
+.sections:hover h1{
+    color: white;
+}
