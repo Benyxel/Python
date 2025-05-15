@@ -58,6 +58,18 @@ input::before{
 
 .fa-solid{
     font-size: 30px;
+    color: #7d7d7d;
+    margin-right: 25px;
+}
+.fa-house{
+    font-size: 30px;
     color: #000000;
     margin-right: 30px;
+}
+
+.right-side img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 20px;
 }
