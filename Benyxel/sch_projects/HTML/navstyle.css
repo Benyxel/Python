@@ -7,10 +7,17 @@ body{
     background-color: rgb(224, 232, 235);
 }
 
+.main-nav{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:right;
     background-color: white;
     padding-top: 20px;
     padding-bottom: 20px;
