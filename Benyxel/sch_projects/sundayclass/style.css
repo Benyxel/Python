@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+}
+
+
+.maincontainer{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+    
+}
+
+.leftside{
+    width: 400px;
+    background-color: aquamarine;
+    padding-top: 200px;
+    padding-bottom:200px;
+    padding-left: 100px;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.rightside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+}
