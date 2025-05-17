@@ -37,4 +37,37 @@ body{
     align-items: center;
     width: 350px;
     background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
+
+
+.rightside h1{
+    font-size: 30px;
+    font-weight: 600;
+   margin-bottom: 30px;
+   margin-left: -150px;
+}
+
+.signcnt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    al
+   
+    
+}
+
+.signf{
+    display: flex;
+    ;
+}
+
+.shape{
+   padding: 10px;
+   margin-bottom: 10px;
+   border: solid rgb(173, 173, 173) 0.01px;
+   border-radius: 20px;
+}
+
