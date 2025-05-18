@@ -39,7 +39,7 @@ body{
     margin-right: 20px;
 }
 
-input{
+.input1{
     background-color: rgba(232, 245, 245, 0.783);
     width: 500px;
     height: 40px;
@@ -95,3 +95,67 @@ input::before{
     border-left: solid 0.03px rgb(209, 209, 209);
     box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2)
 }
+
+
+/* second navbar */
+section{
+    margin-top: 50px;
+}
+
+.second-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2)
+}
+
+.left-side2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side2 h1{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.searchbar{
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    width: 700px;
+    border: none;
+    background-color: rgb(234, 234, 234);
+}
+
+.middle{
+    background-color: rgb(234, 234, 234);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.fa-magnifying-glass{
+    font-size: 20px;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.lastside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.lastside img{
+     width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
