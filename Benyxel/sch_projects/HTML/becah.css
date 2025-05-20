@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-}
+    font-family: Arial, Helvetica, sans-serif;
 
 .main{
     display: flex;
@@ -16,6 +16,8 @@
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 10px;
+    border: 1px solid rgba(130, 130, 130, 0.428);
+    
 }
 
 .card img{
@@ -23,6 +25,7 @@
     height: 350px;
     border-radius: 10px;
     margin-bottom: 20px;
+    object-fit: cover;
 }
 
 .text-icon{
@@ -46,6 +49,13 @@
 }
 
 .card:hover{
-    border: solid 3px rgb(38, 208, 255) ;
+    border: solid 3px #26d0ff ;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.297);
+}
+
+.color{
+    color: #0059ff;
+}
+.fa-star{
+    color: #ffbb00;
 }
