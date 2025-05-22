@@ -1,6 +1,6 @@
 
 :root{
-    --yellow-color: #ffec1b
+    --yellow-color:#ffec1b
 }
 
 
@@ -124,7 +124,7 @@ body{
 }
 
 .head-active{
-    border-bottom: var(--yellow-color);
+    border-bottom: solid 2px var(--yellow-color);
 }
 
 .head-inactive{
@@ -138,7 +138,7 @@ body{
 }
 
 .description span{
-    color: var(--yellow-color)
+    color: var(--yellow-color);
 }
 
 .options{
