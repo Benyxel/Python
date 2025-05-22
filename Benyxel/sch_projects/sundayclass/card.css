@@ -1,3 +1,9 @@
+
+:root{
+    --yellow-color: #ffec1b
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -70,7 +76,7 @@ body{
 .right-set h3{
     font-size: 16px;
     font-weight: 500;
-    color:#bbae1d;
+    color:var(--yellow-color);
 }
 
 .MRC{
@@ -118,7 +124,7 @@ body{
 }
 
 .head-active{
-    border-bottom: solid 2px #bbae1d;
+    border-bottom: var(--yellow-color);
 }
 
 .head-inactive{
@@ -132,7 +138,7 @@ body{
 }
 
 .description span{
-    color: #bbae1d;
+    color: var(--yellow-color)
 }
 
 .options{
