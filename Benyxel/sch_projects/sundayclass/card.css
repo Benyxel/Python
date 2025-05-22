@@ -53,11 +53,18 @@ body{
 
 .right-set{
     width: 400px;
+    align-items: center;
     height: 500px;
     display: flex;
     padding: 40px;
     flex-direction: column;
     background-color: rgb(33, 33, 33);
+}
+
+.righttop{
+   display: flex;
+   flex-direction: column;
+   
 }
 
 .right-set h3{
@@ -126,4 +133,84 @@ body{
 
 .description span{
     color: #bbae1d;
+}
+
+.options{
+    margin-top: 10px;
+    display: flex;
+    gap:10px
+}
+
+.options h2{
+    color:white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.color{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.colorstyle{
+    align-items: center;
+   
+    padding: 7px;
+    border-radius: 50px;
+    background-color: black;
+    margin-top: 8px;
+    display: flex;
+    gap: 10px;
+}
+
+.fa-circle{
+    color: #ffec1b;
+    font-size: 25px;
+}
+
+.qualitystyle{
+    align-items: center;
+    margin: 10px;
+    padding: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+    background-color: black;
+    margin-top: 8px;
+    display: flex;
+    gap: 20px;
+}
+
+.qualitystyle p{
+    color: white;   
+}
+
+.btn{
+    margin-top: 30PX;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input1{
+    font-weight: 800;
+    color: white;
+    width: 380px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    background:none;
+    border: solid 2px #ffffff;
+}
+
+.input2{
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    width: 380px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #ffec1b;
 }
