@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body, html{
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(70, 85, 182);
+   
+}
+.leftset{
+    color: white;
+    margin: 30px 30px;
+    padding: 10px;
+}
+
+.right-set {
+    margin: 10px;
+    color: white;
+    margin: 30px 30px;
+    padding: 10px;
+}
+
+.right-set a{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.right-set a:hover{
+    background-color: white;
+    color:rgb(70, 85, 182);
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+.herosection{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(70, 85, 182);
+}
+
+.herotext h1{
+    color: white;
+    font-size: 50px;
+    width: 500px;
+    margin-top: 100px;
+}
+
+.herotext h5 {
+    color: white;
+    width: 500px;
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.herotext button{
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.section2{
+    margin: 80px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.ourservice{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+
+.ptage{
+    text-align: center;
+}
+
+.cardcontainer{
+    margin-top: 70px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 250px;
+    height: 300px;
+    background-color: aquamarine;
+    margin: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.card img {
+    width: 50%;
+    margin-top: 30px;
+    margin: 30px;
+}

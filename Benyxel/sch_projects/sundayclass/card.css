@@ -45,6 +45,18 @@ body{
     display: flex;
 }
 
+.c-c{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    box-shadow: none;
+    padding: 0px;
+    border: none;
+    background-color: inherit;
+
+    
+}
+
 .circles{
     background-color: grey;
     width: 15px;
