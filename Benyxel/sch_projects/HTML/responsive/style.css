@@ -1,0 +1,58 @@
+:root{
+    --green-- :#67af67;
+    
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #00000037;
+}
+
+.logo{
+    margin: 10px;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu{
+    margin: 10px;
+    padding: 10PX;
+}
+
+.menu a{
+    margin: 0px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.menu a:hover{
+    background-color:var(--green--);
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    transition: 0.4s;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* screens */
