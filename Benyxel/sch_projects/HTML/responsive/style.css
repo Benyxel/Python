@@ -42,7 +42,26 @@
     padding: 10px 15px;
     border-radius: 5px;
     color: white;
-    transition: 0.4s;
+    transition: 0.3s;
+}
+
+.herosection{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.herosec-l{
+    margin: 190px 160px;
+}
+.heroimg{
+    
+}
+
+.heroimg img{
+    margin-top: 30px;
+    width: 600px;
+    height: 600px;
+
 }
 
 
@@ -55,4 +74,27 @@
 
 
 
+
+
 /* screens */
+/*  */
+@media screen and (max-width: 1020px) {
+    .navbar{
+        padding: 40px;
+    }
+
+    .menu .logo{
+        margin: 0;
+        padding: 0;
+
+    }
+}
+
+
+/* phone */
+@media screen and (max-width:900px) {
+    .navbar{
+        display: none;
+       
+    }
+}
