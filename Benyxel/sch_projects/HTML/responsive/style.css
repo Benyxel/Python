@@ -1,5 +1,6 @@
 :root{
     --green-- :#67af67;
+    --grey-- :#eaecf3;
     
 
 }
@@ -7,6 +8,11 @@
 *{
     padding: 0;
     margin: 0;
+    
+}
+
+body h1, p{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar{
@@ -48,13 +54,42 @@
 .herosection{
     display: flex;
     justify-content: space-between;
-    
+    background-color: var(--grey--);
 }
 .herosec-l{
     margin: 190px 160px;
 }
+
+.h11{
+    font-size: 60px;
+}
+.h22{
+    font-size: 60px;
+    color: var(--green--);
+    margin-bottom: 15px;
+}
+
+.herosec-l p{
+    margin-bottom: 30px;
+}
+
+.herosec-l button{
+   padding: 15px 20px;
+   border: none;
+}
+
+.herosec-l button:hover{
+    background-color: var(--green--);
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+
+
 .heroimg{
-    
+    margin-right: 120px;
 }
 
 .heroimg img{
@@ -78,7 +113,7 @@
 
 /* screens */
 /*  */
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1400px) {
     .navbar{
         padding: 40px;
     }
@@ -86,8 +121,14 @@
     .menu .logo{
         margin: 0;
         padding: 0;
-
     }
+
+    .heroimg img{
+    margin-top: 30px;
+    width: 500px;
+    height: 500px;
+
+}
 }
 
 
@@ -95,6 +136,103 @@
 @media screen and (max-width:900px) {
     .navbar{
         display: none;
-       
     }
+
+    .herosection{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    background-color: var(--grey--);
 }
+.herosec-l{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroimg{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.h11{
+    font-size: 40px;
+    text-align: center;
+}
+.h22{
+    font-size: 40px;
+    color: var(--green--);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.heroimg img{
+    align-items: center;
+    margin: 0;
+}
+
+}
+
+
+/* small phone */
+@media screen and (max-width:430px) {
+        .navbar{
+        display: none;
+    }
+
+    .herosection{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    background-color: var(--grey--);
+}
+.herosec-l{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroimg{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.heroimg img{
+    align-items: center;
+    margin: 0;
+}
+
+   .heroimg img{
+    margin-top: 30px;
+    width: 300px;
+    height: 300px;
+
+}
+
+.h11{
+    font-size: 40px;
+    text-align: center;
+}
+.h22{
+    font-size: 40px;
+    color: var(--green--);
+    margin-bottom: 15px;
+    text-align: center;
+}
+.herosec-l p{
+    margin-bottom: 30px;
+    text-align: center;
+}
+}
+
