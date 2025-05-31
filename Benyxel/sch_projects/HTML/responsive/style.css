@@ -15,6 +15,10 @@
 body h1, h2, h3, h4, h5, h6, p{ 
     font-family: Arial, Helvetica, sans-serif;
 }
+p{
+    font-size: 14px;
+    color: grey;
+}
 
 section{
     height: 100vh;
@@ -138,6 +142,66 @@ section{
 .sec2head p{
     margin-top: 10px;
 }
+
+.seccards{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px;
+
+}
+ .card{
+    width: 240px;
+   padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    gap: 10px;
+    box-shadow: 0px 0px 10px #00000025;
+   
+ }
+
+ .card:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+ }
+
+ .mdsec{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 30px;
+
+ }
+
+ .mdsec img{
+    width: 400px;
+ }
+
+ .mdsectext{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    
+ }
+
+ button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+ }
+
+ button:hover{
+    background-color: var(--green--);
+    transition: 0.3s;
+    color: white;
+
+ }
+
 
 
 
