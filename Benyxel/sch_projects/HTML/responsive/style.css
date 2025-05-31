@@ -177,7 +177,7 @@ section{
  }
 
  .mdsec img{
-    width: 400px;
+    width: 300px;
  }
 
  .mdsectext{
@@ -200,6 +200,17 @@ section{
     transition: 0.3s;
     color: white;
 
+ }
+
+ .sec2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 70px;
+    margin: 50px 0px;
+    height: 120px;
+    background-color: var(--grey--);
+    
  }
 
 
