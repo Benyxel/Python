@@ -89,13 +89,6 @@ section{
    border: none;
 }
 
-.herosec-l button:hover{
-    background-color: var(--green--);
-    color: white;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: 0.3s;
-}
 
 
 
@@ -206,13 +199,120 @@ section{
  }
 
 .sec2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     margin-top: 80px;
     height: 300px;
     background-color: var(--grey--);
     margin-bottom:  80px;
 }
 
+.sec2text span{
+    color: var(--green--);
 
+}
+.sec2text h1{
+    line-height: 1.3cm;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.mem{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.sec3cnt{
+    margin-top: 50px;
+    display: flex;
+    align-items: top;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.sec3{
+    height: 400px;
+}
+
+.sec3-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 700px;
+}
+.sec3-txt span {
+    color: var(--green--);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sec3-txt-i{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-size: 30px;
+
+}
+.arrow{
+    display: flex;
+    align-items: center;
+    color: var(--green--);
+    
+}
+
+.bi-arrow-right{
+    font-size: 20px;
+    padding: 5px;
+}
+
+.sec4txt{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    width: 600px;
+    font-size: 25px;
+}
+
+.sec4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.allimgcd{
+    display: flex;
+    gap: 30px;
+}
+
+.imgcard{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.scard{
+    width: 250px;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0px 10px 20px #3237501e;
+    border-radius: 5px;
+    margin-top: -50px;
+    background-color: white;
+    line-height: 0.7cm;
+}
+
+.scard p{
+    color: var(--green--);
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    
 
 
 
