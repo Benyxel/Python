@@ -97,6 +97,7 @@
     }
 
     .mdsec{
+        margin-bottom: 30px;
         display: flex;
         flex-wrap: wrap;
         padding: 0 30px;
@@ -110,6 +111,7 @@
     }
 
     .sec2{
+        
         display: flex;
         flex-wrap: wrap;
         height: 340px;
@@ -132,25 +134,37 @@
     }
 
     .sec3cnt{
+       
         display: flex;
         flex-wrap: wrap;
     }
 
     .sec3-txt{
+        width: 300px;
         display: flex;
+        align-items: center;
         flex-direction: column;
-        flex-wrap: wrap;
+        
     }
     .sec3-txt-i{
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
     }
-
-    .sec4{
-        height: 190vh;
-
+    .sec4txt{
+        width: 350px;
+        margin-top: 30px;
+        margin-bottom: -180px;
+        
     }
+   .sec4txt h1{
+    font-size: 30px;
+}
+
 
     .allimgcd{
+        margin-top: 0px;
         justify-content: center;
         flex-direction: column;
         margin-top: 60%;
@@ -159,8 +173,10 @@
         
     }
 
-    .imgcard{
-        width: 90px;
+   
+
+    .imgcard img{
+        width: 300px;
     }
 
 }
