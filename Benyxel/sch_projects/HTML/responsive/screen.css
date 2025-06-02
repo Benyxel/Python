@@ -1,0 +1,166 @@
+
+@media screen and (min-width:1200px) {
+    .phone-menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .menu{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:667px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .herosection{
+        margin: 0;
+        padding: 0px 0px;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+    }
+
+
+    .herosec-l{
+        margin: 0;
+        padding:15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .heroimg{
+        margin: 0;
+        padding: 20px;
+    }
+    .heroimg img{
+        margin: 0;
+        width: 200px;
+        height: 200px;
+
+    }
+    .herosec-l p{
+        width: 250px;
+        text-align: center;
+        padding: 15px;
+        margin: 0;
+    }
+
+    .ourclients{
+        margin: 20px;
+
+    }
+
+    .h11
+    {
+        font-size: 25px;
+    }
+    .h22
+    {
+        font-size: 25px;
+        color: var(--green--);
+        margin: 0;
+    }
+    .ourclients h1{
+        font-size: 25PX;
+    }
+
+    .sponsors{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        
+    }
+
+    .bi{
+        font-size: 25px;
+    }
+
+    .sec2head h2{
+        font-size: 20px;
+        text-align: center;
+        padding:0 19px;
+        margin: 0;
+    }
+
+    .seccards{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+    }
+
+    .mdsec{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 30px;
+    }
+    .mdsec img{
+        width: 240px;
+    }
+
+    .mdsectext h1{
+        font-size: 20px;
+    }
+
+    .sec2{
+        display: flex;
+        flex-wrap: wrap;
+        height: 340px;
+        margin: 0;
+    }
+    .sec2text{
+        padding: 0 30px;
+        text-align: center;
+        
+    }
+
+    .sec2text h1{
+        line-height: .8cm;
+        font-size: 25px;
+    }
+
+    .mem{
+        gap: 10px;
+        
+    }
+
+    .sec3cnt{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sec3-txt{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .sec3-txt-i{
+        display: flex;
+    }
+
+    .sec4{
+        height: 190vh;
+
+    }
+
+    .allimgcd{
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .imgcard{
+        width: 90px;
+    }
+
+}

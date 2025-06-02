@@ -28,10 +28,13 @@ section{
 
 .navbar{
     display: flex;
+    align-items: center;
     justify-content: space-around;
     padding: 20px;
     box-shadow: 0px 0px 10px #00000037;
 }
+
+
 
 .logo{
     margin: 10px;
@@ -168,7 +171,6 @@ section{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    
     padding: 0px 30px;
 
  }
@@ -236,9 +238,7 @@ section{
     margin-bottom: 40px;
 }
 
-.sec3{
-    height: 400px;
-}
+
 
 .sec3-txt {
     display: flex;
@@ -385,127 +385,6 @@ section{
 
 
 /* screens */
-/*  */
-@media screen and (max-width: 1400px) {
-    .navbar{
-        padding: 40px;
-    }
-
-    .menu .logo{
-        margin: 0;
-        padding: 0;
-    }
-
-    .heroimg img{
-    margin-top: 30px;
-    width: 500px;
-    height: 500px;
-
-}
-}
 
 
-/* phone */
-@media screen and (max-width:900px) {
-    .navbar{
-        display: none;
-    }
-
-    .herosection{
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    background-color: var(--grey--);
-}
-.herosec-l{
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.heroimg{
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-.h11{
-    font-size: 40px;
-    text-align: center;
-}
-.h22{
-    font-size: 40px;
-    color: var(--green--);
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.heroimg img{
-    align-items: center;
-    margin: 0;
-}
-
-}
-
-
-/* small phone */
-@media screen and (max-width:430px) {
-        .navbar{
-        display: none;
-    }
-
-    .herosection{
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    background-color: var(--grey--);
-}
-.herosec-l{
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.heroimg{
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.heroimg img{
-    align-items: center;
-    margin: 0;
-}
-
-   .heroimg img{
-    margin-top: 30px;
-    width: 300px;
-    height: 300px;
-
-}
-
-.h11{
-    font-size: 40px;
-    text-align: center;
-}
-.h22{
-    font-size: 40px;
-    color: var(--green--);
-    margin-bottom: 15px;
-    text-align: center;
-}
-.herosec-l p{
-    margin-bottom: 30px;
-    text-align: center;
-}
-}
 
