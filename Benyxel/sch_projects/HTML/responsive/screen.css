@@ -173,10 +173,48 @@
         
     }
 
-   
+   .socials{
+    display: inline;
+    text-align: center;
+   }
 
     .imgcard img{
         width: 300px;
     }
 
+    .footercard{
+        padding: 50px 0px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wid1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    .WIDZ{ 
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+
+    }
+
+    .WIDZ div h3{
+    color: white;
+    margin-bottom: 20px;
+
+    }
+    .WIDZ div p{
+    margin-top: 0px;
+}
 }
