@@ -283,8 +283,6 @@
     margin-bottom:  80px;
 }
 
-}
-
  .mdsec{
     display: flex;
     flex-direction: column;
@@ -303,6 +301,14 @@
     gap: 20px;
     
  }
+
+ .sec2text span{
+    color: var(--green--);
+
+}
+.sec2text h1{
+    font-size: 30px;
+}
 
 }
 
