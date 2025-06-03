@@ -302,6 +302,7 @@ section{
    
     align-items: center;
 }
+
 .lastsec{
     display: flex;
     flex-direction: column;

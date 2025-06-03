@@ -221,7 +221,7 @@
 
 
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:900px){
     .herosection{
         display: flex;
         align-items: center;
@@ -308,6 +308,29 @@
 }
 .sec2text h1{
     font-size: 30px;
+    flex-direction: column;
+}
+
+.sec3cnt{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.sec3-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 600px;
+}
+
+.allimgcd{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
 }
 
 }
