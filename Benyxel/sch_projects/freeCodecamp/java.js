@@ -15,4 +15,16 @@ const text = document.querySelector("#text");
 const xpText = document.querySelector("#xpText");
 const healthText = document.querySelector("#healthText");
 const goldText = document.querySelector("#goldText");
+const monsterHealthText =document.querySelector("#monsterHealth")
 
+function goStore() {
+    console.log("going to the store");
+}
+
+function goCave() {
+    console.log("going to the cave");
+}
+
+function fightDragon() {
+    console.log("Fighting Dragon");
+}
