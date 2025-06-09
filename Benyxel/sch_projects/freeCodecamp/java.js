@@ -24,10 +24,14 @@ btn3.onclick = fightDragon;
 
 
 function goStore() {
-    text.innerText = "going to the store";
+    text.innerText = "You entered store";
     btn1.innerText = "Buy 10 health (10 gold)";
     btn2.innerText = "Buy weapon (30 gold)";
     btn3.innerText = "Go to town square";
+    btn1.onclick = buyHealth;
+    btn2.onclick = buyWeapon;
+    btn3.onclick = goTown;
+  
 }
 
 function goCave() {
