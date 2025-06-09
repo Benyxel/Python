@@ -17,6 +17,8 @@ const healthText = document.querySelector("#healthText");
 const goldText = document.querySelector("#goldText");
 const monsterHealthText =document.querySelector("#monsterHealth")
 
+btn1.onclick = goStore
+
 function goStore() {
     console.log("going to the store");
 }
