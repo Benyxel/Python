@@ -25,7 +25,7 @@ function goTown(){
     text.innerText = "You are in the town square. You see a sign that says Store.";
     btn1.innerText = "Go to store";
     btn2.innerText = "Go to cave";
-    btn3.innerText = "fightDragon";
+    btn3.innerText = "FightDragon";
     btn1.onclick = goStore;
     btn2.onclick = goCave;
     btn3.onclick = FightDragon;
