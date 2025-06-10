@@ -25,4 +25,7 @@ for (let x of data){
     
 }
     
-    
+for (let x of data){
+    if (typeof x == "string" && x.toLowerCase() == "kofi")
+    console.log( `${typeof x} + ${x}`)
+}
