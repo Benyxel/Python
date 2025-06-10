@@ -19,7 +19,7 @@ const monsterHealthText =document.querySelector("#monsterHealth")
 
 btn1.onclick = goStore;
 btn2.onclick = goCave;
-btn3.onclick = fightDragon;
+btn3.onclick = FightDragon;
 
 function goTown(){
     text.innerText = "You are in the town square. You see a sign that says Store.";
@@ -28,7 +28,7 @@ function goTown(){
     btn3.innerText = "fightDragon";
     btn1.onclick = goStore;
     btn2.onclick = goCave;
-    btn3.onclick = fightDragon;
+    btn3.onclick = FightDragon;
 }
 
 function goStore() {
@@ -47,7 +47,7 @@ function goCave() {
     console.log("going to the cave");
 }
 
-function fightDragon() {
+function FightDragon() {
     
     console.log("Fighting Dragon");
 }
