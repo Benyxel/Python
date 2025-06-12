@@ -1,6 +1,3 @@
-// Import prompt-sync
-const prompt = require("prompt-sync")();
-
 function calculateBMI() {
   // Get user input using prompt
   let weight = prompt("Enter your weight in kg: ");
@@ -25,9 +22,8 @@ function calculateBMI() {
     category = "Obese";
   }
 
-  // Show results in console
-  console.log("\nYour BMI is: " + bmi.toFixed(2));
-  console.log("Category: " + category);
+  // Show results
+  alert("Your BMI is: " + bmi.toFixed(2) + "\nCategory: " + category);
 }
 
 // Run the function
