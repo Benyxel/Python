@@ -1,30 +1,36 @@
-const ps = require("prompt-sync");
-ps();
 
-const prompt = ps({ sigint: true });
+const btn1 = document.querySelector("#btn1")
+const btn2 = document.querySelector("#btn2")
+const btn3 = document.querySelector("#btn3")
 
-function playGame(playerMove) {
-    function promptcheck() {
-  let playerName = prompt("Enter Your name to Register the Game: ");
+btn1.onclick = rock
+btn2.onclick = paper
+btn3.onclick = scissors
 
-  // Check if name is empty or contains non-alphabetic characters
-  if (
-    !playerName ||
-    playerName.trim() === "" ||
-    !/^[A-Za-z]+$/.test(playerName)
-  ) {
-    console.log("Please enter a valid name using only letters (A-Z, a-z)!");
-    return promptcheck(); // Ask again if name is invalid
-  }
 
-  console.log(`Welcome ${playerName}! Let's play Rock, Paper, Scissors!`);
-  return playerName;
+
+function rock() {
+    let computerMove = ""
+    const randomNum = Math.random();
+    if (randomNum >= 0 && randomNum < 1 / 3) {
+        computerMove = "rock";
+    }
+    else if (randomNum >= 1 / 3 && randomNum < 2 / 3) {
+        computerMove = "paper";
+    }
+
+    else if (randomNum >= 2 / 3 && randomNum < 1) {
+        computerMove = "scissors";
+    }
+    alert(computerMove)
 }
-promptcheck();
-    
-    // starting 
+
+   
+
+function paper() {
     
 }
 
-playGame()
-
+function scissors() {
+    
+}
