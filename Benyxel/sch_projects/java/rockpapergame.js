@@ -6,10 +6,11 @@ btn1.onclick = rock;
 btn2.onclick = paper;
 btn3.onclick = scissors;
 
-let computerMove = "";
-let result = "";
+
+
 
 function computer() {
+  let computerMove ="";
   const randomNum = Math.random();
   if (randomNum >= 0 && randomNum < 1 / 3) {
     computerMove = "rock";
@@ -17,44 +18,45 @@ function computer() {
     computerMove = "paper";
   } else if (randomNum >= 2 / 3 && randomNum < 1) {
     computerMove = "scissors";
-  }
+    }
+    return "computerMove"
+    
 }
 
-function rock() {
-  computer();
+function playerGame(playerMove) {
+    const computerMove = computer();
+    let result = "";
 
-  if (computerMove === "rock") {
+    if (playerMove === "scissors") {
+     if (computerMove === "rock") {
     result = "Tie";
   } else if (computerMove === "paper") {
     result = "You Lose";
   } else if (computerMove === "scissors") {
     result = "You win";
+    
   }
-  alert(`You picked Rock and computer picked ${computerMove}. ${result}`);
+  
+}alert(`You picked ${playerMove} and computer picked ${computerMove}. ${result}`);
+ 
 }
+
+
+ 
+function rock() {
+    computer();
+   playerGame("rock")
+}
+ 
 
 function paper() {
   computer();
-
-  if (computerMove === "rock") {
-    result = "You win";
-  } else if (computerMove === "paper") {
-    result = "Tie";
-  } else if (computerMove === "scissors") {
-    result = " You Lose";
-  }
-  alert(`You picked Paper and computer picked ${computerMove}. ${result}`);
+   playerGame("paper")
+  
 }
 
 function scissors() {
   computer();
-
-  if (computerMove === "rock") {
-    result = "You Lose";
-  } else if (computerMove === "paper") {
-    result = "You win";
-  } else if (computerMove === "scissors") {
-    result = " You Tie";
-  }
-  alert(`You picked scissors and computer picked ${computerMove}. ${result}`);
+     playerGame("scissors")
+ 
 }
