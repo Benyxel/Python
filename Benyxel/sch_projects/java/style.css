@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0
+    ;
+}
+
+body p ,label {
+    font-size: 18px;
+    color: white;
+}
+
+
+
+.main{
+    display: flex;
+     width: 500px;
+     position: absolute;
+     margin: 40px;
+    background-color: rgb(36, 35, 35);
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    
+
+}
+
+.left{
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    padding: 30px;
+}
+
+
+
+.num{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.right{
+    
+    padding: 60px;
+    text-align: center;
+}
+
+.inp{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn{
+    width: 70px;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+}
