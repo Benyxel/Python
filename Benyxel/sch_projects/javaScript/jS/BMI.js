@@ -1,14 +1,7 @@
-const ps = require("prompt-sync");
 
-ps();
-
-const prompt = ps({ sigint: true });
 
 function BMI() {
-  let userName = prompt("Hello Enter Your name: ");
-  console.log(`Welcome ${userName}`);
-  let height = prompt(`${userName} enter your height in cm: `);
-  let weight = prompt(`${userName} enter your weight in kg: `);
+ 
   height = parseFloat(height) / 100; // Convert cm to meters
   weight = parseFloat(weight);
 
