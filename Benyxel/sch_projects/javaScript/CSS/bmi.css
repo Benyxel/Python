@@ -3,8 +3,14 @@
     padding: 0;
 }
 
+
+h1, p , h2, h3, h4, h5, h6, label{
+    font-family:poppins;
+}
+
 body{
     background-color: rgba(223, 202, 193, 0.46);
+
 }
 
 
@@ -21,24 +27,79 @@ body{
 }
 
 .left{
+    position: relative;
+    padding-top:15px ;
     width: 312px;
     height: 615px;
     background: linear-gradient( to top, rgb(250, 244, 240),rgb(227, 93, 20));
     border-radius: 20px;
 }
 
+.fa-bars{
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
+}
+
+.fa-bell{
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+}
+
+
+.userName{
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    font-weight: 600;
+}
+
 
 .short-left{
+    align-items: center;
     margin-top: 135px;
-    width: 312px;
+    width: 100%;
     border-radius: 25px;
     height: 480px;
     background-color: white;
     box-shadow: 7px 1px 15px rgba(0, 0, 0, 0.353);
 }
 
+.l-short-c{
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.avater{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.avater img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avaimg{
+    display: flex;
+    gap: 30px;
+}
+
+
 .right{
-     width: 312px;
+    padding-top: 15px;
+    width: 312px;
     height: 615px;
     background: linear-gradient( to top, rgb(250, 244, 240),rgb(227, 93, 20));
     border-radius: 20px;
@@ -51,4 +112,39 @@ body{
     height: 480px;
     background-color: white;
     box-shadow: 7px 1px 15px rgba(0, 0, 0, 0.353);
+}
+
+
+.wrapper {
+    width: 200px;
+  display: flex;
+  padding: 4px;
+  background-color: #ec9d09;
+  border-radius: 5px;
+  
+}
+
+.custom-input {
+  flex-grow: 1;
+}
+
+.custom-input input[type=radio] {
+  display: none;
+}
+
+.custom-input label {
+  display: block;
+  padding: 6px 8px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  transition : all .1s 0s ease;
+  cursor: pointer;
+}
+
+.custom-input input[type=radio]:checked + label {
+  background-color: #f5f5f5;
+  color: #000;
+  border-radius: 4px;
+  cursor: pointer;
 }
