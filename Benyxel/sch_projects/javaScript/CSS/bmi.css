@@ -96,6 +96,33 @@ body{
     gap: 30px;
 }
 
+.datatake{
+    width: 400px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+
+}
+
+.age input{
+    margin-left: 10px;
+    max-width: 250px;
+    padding: 8px;
+    border: none;
+    box-shadow: 0px 5px 5px rgba(195, 106, 22, 0.582);
+    background-color: #fde6cfa5;
+}
+
+.weight input{
+    width:120px;
+    margin-left: 10px;
+    padding: 8px;
+    border: none;
+    background-color: #fec790;
+}
+
 
 .right{
     padding-top: 15px;
