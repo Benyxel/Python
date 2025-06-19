@@ -1,36 +1,62 @@
 function next() {
   let user = document.querySelector("#username").value;
-  user = document.querySelector("#userNames").innerHTML = user;
+  if (!user || user.trim() === "") {
+    alert("Please enter your name!");
+    return false;
+  }
+  // Save username to localStorage
+  localStorage.setItem("userName", user);
+  return true;
 }
-next()
+
+// Check if we're on the BMI page
+if (document.querySelector("#username")) {
+  // Get username from localStorage
+  let savedUser = localStorage.getItem("userName");
+  if (savedUser) {
+    document.querySelector("#username").innerHTML = "Hi " + savedUser;
+  }
+}
+
+function BMI() {
+  
+  let age = document.querySelector("#age").value;
+  let height = document.querySelector("#height").value;
+  let weight = document.querySelector("#weight").value;
+  let savedUser = localStorage.getItem("userName");
 
 
+  if (!age || !height || !weight) {
+    alert("Please fill in all fields!");
+    return;
+  }
 
-
-
-
-// function BMI() {
  
-//   height = parseFloat(height) / 100; // Convert cm to meters
-//   weight = parseFloat(weight);
+  let ageN = parseInt(age);
+  let newheight = parseFloat(height) / 100; // Convert cm to meters
+  let newweight = parseFloat(weight);
 
-//   let bmi = weight / (height * height);
+  
+  document.querySelector("#ageOP").innerHTML = ageN;
+  document.querySelector("#username2").innerHTML = savedUser || "User";
+  document.querySelector("#hresult").innerHTML = newheight + " cm";
+  document.querySelector("#Wresult").innerHTML = newweight + " kg";
 
-//   let category;
-//   if (bmi < 18.5) {
-//     category = "Underweight";
-//   } else if (bmi >= 18.5 && bmi < 25) {
-//     category = "Normal Weight";
-//   } else if (bmi >= 25 && bmi < 30) {
-//     category = "Overweight";
-//     if (category == "Overweight") {
-//       console.log(userName + " " + "You need training🤣😁");
-//     }
-//   } else {
-//     category = "Obesity";
-//   }
+  let bmi = newweight / (newheight * newheight);
 
-//   console.log(`${userName} your BMI is ${bmi.toFixed(2)}, you're ${category}`);
-// }
+  // let category;
+  // if (bmi < 18.5) {
+  //   category = "Underweight";
+  // } else if (bmi >= 18.5 && bmi < 25) {
+  //   category = "Normal Weight";
+  // } else if (bmi >= 25 && bmi < 30) {
+  //   category = "Overweight";
+  //   if (category == "Overweight") {
+  //     console.log(userName + " " + "You need training🤣😁");
+  //   }
+  // } else {
+  //   category = "Obesity";
+  // }
 
-// BMI();
+  // console.log(`${userName} your BMI is ${bmi.toFixed(2)}, you're ${category}`);
+}

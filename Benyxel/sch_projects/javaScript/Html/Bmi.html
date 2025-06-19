@@ -16,7 +16,7 @@
         <div class="left">
            <i class="fa-solid fa-bars"></i>
            <i class="fa-regular fa-bell"></i>
-           <h3 class="userName" id="userNames">Hi UserName</h3>
+           <h3 class="userName" id="username">Hi UserName</h3>
 
 
             <div class="short-left">
@@ -42,23 +42,23 @@
                 <div class="datatake">
                     <div class="age">
                         <p>Age</p>
-                        <input type="number" id="age">
+                        <input type="number" required id="age">
                     </div>
 
                     <div class="weight">
                         <p>Weight</p>
-                        <input type="number" id="weight">
+                        <input type="number" required id="weight">
                     </div>
 
 
                     <div class="height">
                         <p>Height</p>
-                        <input type="number" id="weight">
+                        <input type="number" required id="height">
                     </div>
 
 
-                    <div class="btn">
-                        <button>Calculate Your BMI</button>
+                    <div class="btn" >
+                        <button onclick="BMI()" id="btn">Calculate Your BMI</button>
                     </div>
                     
                 </div>
@@ -70,9 +70,27 @@
 
 
         <div class="right">
-            <div class="short-right"></div>
+            <div class="short-right">
+                <div>
+                <p>Age</p>
+                <p id="ageOP"></p>
+
+                <p>Name</p>
+                <p id="username2"> bbb</p>
+
+                 <p>Height</p>
+                <p id="hresult"></p>
+                <p>Weight</p>
+                <p id="Wresult"></p>
+                </div>
+
+
+                
+            </div>
+
+            
         </div>
     </div>
-    <script src="/javaScript/jS/BMI.js"></script>
-</body>
+    
+</body><script src="/javaScript/jS/BMI.js"></script>
 </html>
