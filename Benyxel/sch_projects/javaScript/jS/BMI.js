@@ -82,6 +82,6 @@ if (document.querySelector("#male").checked) {
   }
   document.querySelector("#ybmi").innerHTML = category
   document.querySelector("#advice").innerHTML = advice
-
-  
+  document.querySelector("#advice").innerHTML = advice
+  document.querySelector("#bmical").innerHTML = bmi.toFixed(1)
 }
