@@ -19,29 +19,32 @@ if (document.querySelector("#username")) {
 }
 
 function BMI() {
+  
   let age = document.querySelector("#age").value;
   let height = document.querySelector("#height").value;
   let weight = document.querySelector("#weight").value;
   let savedUser = localStorage.getItem("userName");
   // Get selected gender
-  let allGender;
-  if (document.querySelector("#male").checked) {
+let allGender;
+if (document.querySelector("#male").checked) {
     allGender = "Male";
-  } else if (document.querySelector("#female").checked) {
+} else if (document.querySelector("#female").checked) {
     allGender = "Female";
-  } else {
+} else {
     allGender = "Not Selected";
-  }
+}
 
   if (!age || !height || !weight) {
     alert("Please fill in all fields!");
     return;
   }
 
+ 
   let ageN = parseInt(age);
   let newheight = parseFloat(height) / 100; // Convert cm to meters
   let newweight = parseFloat(weight);
 
+  
   document.querySelector("#ageOP").innerHTML = ageN;
   document.querySelector("#username2").innerHTML = savedUser || "User";
   document.querySelector("#hresult").innerHTML = newheight + " cm";
@@ -50,6 +53,8 @@ function BMI() {
   let bmi = newweight / (newheight * newheight);
   let category;
 
+  
+  
   if (bmi < 18.5) {
     category = "Underweight";
   } else if (bmi >= 18.5 && bmi < 25) {
@@ -59,5 +64,7 @@ function BMI() {
   } else {
     category = "Obesity";
   }
-  document.querySelector("#ybmi").innerHTML = category;
+  document.querySelector("#ybmi").innerHTML = category
+
+  
 }
