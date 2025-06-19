@@ -23,7 +23,7 @@ function calculateBMI() {
   }
 
   // Show results
-  alert("Your BMI is: " + bmi.toFixed(2) + "\nCategory: " + category);
+  
 }
 
 // Run the function
