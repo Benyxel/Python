@@ -24,6 +24,17 @@ function BMI() {
   let height = document.querySelector("#height").value;
   let weight = document.querySelector("#weight").value;
   let savedUser = localStorage.getItem("userName");
+
+  // Gender Profile
+  
+  // let Profile;
+
+  // document.querySelector("#imgresult") = Profile
+
+  // if (document.querySelector("#fprofile")) {
+  //   Profile = "imgresult"
+  // }
+
   // Get selected gender
 let allGender;
 if (document.querySelector("#male").checked) {
@@ -52,19 +63,25 @@ if (document.querySelector("#male").checked) {
   document.querySelector("#gender").innerHTML = allGender;
   let bmi = newweight / (newheight * newheight);
   let category;
+  let advice;
 
   
   
   if (bmi < 18.5) {
     category = "Underweight";
+    advice = "You need to gain More🤣"
   } else if (bmi >= 18.5 && bmi < 25) {
     category = "Normal Weight";
+    advice = "You are Normal👌"
   } else if (bmi >= 25 && bmi < 30) {
     category = "Overweight";
+    advice = "you need to take care of yourself.😒";
   } else {
     category = "Obesity";
+    advice = "you need to take care of yourself.😒";
   }
   document.querySelector("#ybmi").innerHTML = category
+  document.querySelector("#advice").innerHTML = advice
 
   
 }

@@ -267,9 +267,86 @@ body{
     box-shadow: 7px 1px 15px rgba(0, 0, 0, 0.353);
 }
 
+.output{
+    display: flex;
+}
+
+.ravaimg{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.r-short-c{
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.ravaimg img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.namgender, .bmir h5{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.bmir{
+    padding: 10px;
+    background-color:#fceafe ;
+    height: 60px;
+}
+
+.bmir p{
+    font-size: 12px;
+}
+.note{
+    display: flex;
+    gap: 3px;
+}
+.output h5{
+    font-size: 16px;
+    font-weight: 600;
+}
+.output{
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    background-color: #fde6cfa5;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.namgender{
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    height: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #d7f0ff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.output-c{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
 
 .wrapper {
-    width: 200px;
+width: 200px;
   display: flex;
   padding: 2px;
   background-color: #ec9d09;
