@@ -58,7 +58,7 @@ if (document.querySelector("#male").checked) {
   
   document.querySelector("#ageOP").innerHTML = ageN;
   document.querySelector("#username2").innerHTML = savedUser || "User";
-  document.querySelector("#hresult").innerHTML = newheight + " cm";
+  document.querySelector("#hresult").innerHTML = newheight + " M";
   document.querySelector("#Wresult").innerHTML = newweight + " kg";
   document.querySelector("#gender").innerHTML = allGender;
   let bmi = newweight / (newheight * newheight);

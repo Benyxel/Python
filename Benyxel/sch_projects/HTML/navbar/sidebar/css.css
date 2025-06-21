@@ -48,11 +48,12 @@ body{
 }
 
 .bi{
-    font-size: 30px;
+    font-size: 20px;
     margin-right: 20px;
-    color: #666666;
-
+    color: #0e0909;
 }
+
+
 
 .left-side img{
     width: 50px;
@@ -64,9 +65,9 @@ body{
 .sidebar{
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 50px;
     height: 100vh;
-    padding-top: 30px;
+    padding-top: 70px;
     padding-left: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
 }
@@ -81,8 +82,11 @@ body{
     margin-bottom: 20px;
     cursor: pointer;
     
+    
 }
-
+.sidetext{
+    display: none;
+}
 .sections h1{
 
     font-weight: 400;
@@ -90,11 +94,14 @@ body{
     
 }
 
-.sections:hover{
-    background-color: #1c17bb;
+
+
+.sections:hover h1 {
     color: white;
+
 }
 
-.sections:hover h1{
-    color: white;
+.sections:hover .bi{
+    color: #c70505;
 }
+
