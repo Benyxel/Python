@@ -1,7 +1,9 @@
-const toggle = document.querySelector("#toggle")
+let name = "John"
+let age = 30
+console.log(name)
+console.log(age)
 
-toggle.addEventListener("click", function () {
-    const sdie = document.querySelector("#sidebar")
-    sdie.classList.toggle("toggle")
-    console.log("working")
-})
+let a = 5;
+let b = 7
+let sum = a + b
+console.log(sum)
