@@ -1,9 +1,7 @@
-let name = "John"
-let age = 30
-console.log(name)
-console.log(age)
+const btn = document.querySelector("#toggle");
 
-let a = 5;
-let b = 7
-let sum = a + b
-console.log(sum)
+btn.addEventListener("click" ,function () {
+    const side = document.querySelector("#sidebar");
+    side.classList.toggle("toggle");
+    console.log("working")
+})
