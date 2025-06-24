@@ -1,7 +1,9 @@
 const btn = document.querySelector("#toggle");
+const side = document.querySelector("#sidebar");
 
-btn.addEventListener("click" ,function () {
-    const side = document.querySelector("#sidebar");
-    side.classList.toggle("toggle");
-    console.log("working")
-})
+// Add toggle class by default to hide sidebar initially
+side.classList.add("toggle");
+
+btn.addEventListener("click", function () {
+  side.classList.toggle("toggle");
+});
