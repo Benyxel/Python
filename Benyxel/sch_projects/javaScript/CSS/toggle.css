@@ -1,13 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-
-
+}
+h4, h5{
+    color: white;
 }
 
-
 .container{
-    background-color: rgb(214, 176, 151);
+    background-color: rgb(29, 26, 56);
     display: flex;
     width: 350px;
     height: 600px;
@@ -32,11 +32,14 @@
 }
 
 .bi-list{
+    color: white;
+    width: 20px;
+    height: 20px;
     position: absolute;
     top: 10px;
     right: 15px;
     font-size: 20px;
-    background-color: rgb(201, 188, 188);
+    background-color: rgba(253, 244, 166, 0.233);
     border-radius: 50px;
     padding: 5px;
     cursor: pointer;
@@ -50,6 +53,7 @@
 }
 
 input{
+    width: 240px;
     font-size: 15px;
     padding: 15px;
     position: relative;
@@ -68,8 +72,32 @@ input{
 
 .search{
     margin-top: 60px;
-    color: white;
+    margin-bottom: 30px;
+    
 }
 .menu{
+    width: 210px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
     
+}
+
+.menu:hover{
+    background-color:#396eff; ;
+}
+
+.bi{
+    color:#396eff;
+    font-size: 30px;
+    
+    
+}
+.contact{
+    justify-content: space-between;
+    width: 210px;
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    gap: 20px;
 }
