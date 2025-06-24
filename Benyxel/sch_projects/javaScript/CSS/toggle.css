@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-h4, h5{
+h4, h5, p{
     color: white;
 }
 
@@ -100,4 +100,20 @@ input{
     display: flex;
     text-align: center;
     gap: 20px;
+}
+.l-cd{
+    display: flex;
+}
+.all-dis{
+    display: flex;
+    flex-direction: column;
+}
+.chat-card{
+    margin-top: 60px;
+    padding: 20px 0px;
+    width: 250px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: pink;
 }
