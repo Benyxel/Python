@@ -8,7 +8,6 @@ h4, h5, p{
 
 .container{
     background-color: rgb(29, 26, 56);
-    display: flex;
     width: 350px;
     height: 600px;
     position: absolute;
@@ -29,6 +28,7 @@ h4, h5, p{
     transition: all 0.3s ease;
     opacity: 1;
     overflow: hidden;
+    z-index: 2;
 }
 
 .bi-list{
@@ -52,7 +52,7 @@ h4, h5, p{
     padding: 0;
 }
 
-input{
+.inp{
     width: 240px;
     font-size: 15px;
     padding: 15px;
@@ -116,4 +116,17 @@ input{
     display: flex;
     justify-content: space-between;
     background-color: pink;
+}
+
+input{
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.save{
+    padding: 20px;
+}
+
+button{
+    padding: 5px;
 }
