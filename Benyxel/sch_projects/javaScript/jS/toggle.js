@@ -9,12 +9,8 @@ btn.addEventListener("click", function () {
 });
 
 
-
-
-
-
-edit.addEventListener("click", function () {
-const name = document.querySelector("#name");
+function edits() {
+  const name = document.querySelector("#name");
 const contact = document.querySelector("#contact");
 const edit = document.querySelector("#edit");
 const isDisabled = !name.disabled
@@ -23,4 +19,10 @@ const isDisabled = !name.disabled
     name.disabled = !name.disabled;
     contact.disabled = !contact.disabled;
 
-})
+}
+
+const edit = document.querySelector("#edit");
+
+edit.addEventListener("click", edits 
+
+)
