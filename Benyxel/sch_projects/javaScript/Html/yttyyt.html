@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Toggle Test</title>
+</head>
+<body>
+  <input type="text" id="input1" disabled>
+<input type="text" id="input2" disabled>
+<button id="btn">Edit</button>
+
+  
+  <script>
+  function toggleEdit() {
+    const btn = document.querySelector("#btn")
+    const input1 = document.getElementById("input1");
+    const input2 = document.getElementById("input2");
+    
+    const isDisabled = !input1.disabled;
+    
+    input1.disabled = !input1.disabled;
+    input2.disabled = !input2.disabled;
+    
+    btn.textContent = isDisabled ? "Edit" : "Save";
+  }
+  
+    const btn = document.querySelector("#btn");
+    btn.addEventListener("click", toggleEdit)
+</script>
+
+</body>
+</html>
