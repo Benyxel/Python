@@ -9,16 +9,26 @@
 // });
 
 
+<<<<<<< HEAD
 // // function edits() {
 // //   const name = document.querySelector("#name");
 // // const contact = document.querySelector("#contact");
 // // const edit = document.querySelector("#edit");
 // // const isDisabled = !name.disabled
 // //   edit.textContent = isDisabled ? "Edit" : "Save";
+=======
+function edits() {
+  const name = document.querySelector("#name");
+const contact = document.querySelector("#contact");
+const edit = document.querySelector("#edit");
+const isDisabled = !name.disabled
+  edit.textContent = isDisabled ? "Edit" : "Save";
+>>>>>>> a1970a87d2a67618ef94a897fea87c8832fba6cf
     
 // //     name.disabled = !name.disabled;
 // //     contact.disabled = !contact.disabled;
 
+<<<<<<< HEAD
 // // }
 
 // // const edit = document.querySelector("#edit");
@@ -34,3 +44,12 @@ fetch(url)
   .then((jres)=>{console.log(jres)})
 
 .catch((error)=>{console.error(error)})
+=======
+}
+
+const edit = document.querySelector("#edit");
+
+edit.addEventListener("click", edits 
+
+)
+>>>>>>> a1970a87d2a67618ef94a897fea87c8832fba6cf
