@@ -10,16 +10,30 @@
     transform: translate(-50%,-50%);
     background: linear-gradient( #f9d6dc, #f6cece);
     padding: 50px;
+    border-radius: 10px;
+}
+
+.circle{
+    background:linear-gradient(#e372f24a, #6c5df433);
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
 }
 
 .weather-card{
     width: 400px;
     height: 700px;
-    background-color: white;
-    align-items: center;
+    background-color: #ffffff55;
+    box-shadow: #270d0d2e 0px 0px 16px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 30px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
