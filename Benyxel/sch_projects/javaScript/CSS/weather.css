@@ -1,0 +1,25 @@
+
+
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1000px;
+    height: 700px;
+    transform: translate(-50%,-50%);
+    background: linear-gradient( #f9d6dc, #f6cece);
+    padding: 50px;
+}
+
+.weather-card{
+    width: 400px;
+    height: 700px;
+    background-color: white;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+}
