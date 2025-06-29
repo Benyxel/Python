@@ -11,8 +11,15 @@
    <div class="container">
     <div class="circle"></div>
     <div class="weather-card">
-
-        <input class="search" type="text">
+        <div>
+            <input id="locations" class="search" type="text" placeholder="Search City">
+            <select class="converter" id="converter">
+                <option value="celsius">&degC</option>
+                <option value="fahrenheit">&degF</option>
+            </select>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+       
         <div class="header">
             <i class="fa-solid fa-location-dot"></i>
             <h1 id="city">Accra</h2> <br>  
