@@ -6,7 +6,7 @@
     margin:0;
 }
 
-h1 {
+h1, p{
     font-family: poppins;
     font-weight: 500;
 }
@@ -54,10 +54,14 @@ h1 {
 
 .header{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
+.geo{
+    display: flex;
+    align-items: center;
+}
 .fa-location-dot{
     font-size: 23px;
     color: rgb(79, 70, 247);
@@ -73,3 +77,10 @@ h1 {
     margin-bottom: 10px;
 }
 
+.hero{
+    width: 340px;
+    height:180px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background: linear-gradient(to right, #f68bf4,#6289fe);
+}
