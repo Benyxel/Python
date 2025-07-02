@@ -6,7 +6,7 @@
     margin:0;
 }
 
-h1, p{
+h1,h2, p{
     font-family: poppins;
     font-weight: 500;
 }
@@ -76,12 +76,23 @@ h1, p{
 }
 
 .search {
+    font-size: 20px;
+    position: relative;
     width: 200px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     border: none;
-    background-color: #f9ecee8f;
+    background-color: #ffffff2c;
     margin-bottom: 10px;
+}
+
+.fa-magnifying-glass{
+    position: absolute;
+    top: 35px;
+    color: #8559a7;
+    right: 100px;
+    font-size:20px;
+    cursor: pointer;
 }
 
 .hero{
