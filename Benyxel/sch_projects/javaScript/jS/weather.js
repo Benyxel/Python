@@ -9,9 +9,16 @@ searchbtn = document.querySelector("#searchbtn");
 
 
 async function weather_fetch(city) {
+    try {
     const response = await fetch(url + city + `&appid=${apiKey}`);
-    const data = await response.json();
-    console.log(data)
+        const data = await response.json();
+        console.log(data)
+} 
+    catch (error) {
+    console.error(error,"An error occoured")
+}  
+    
+   
 }
 
 searchbtn.addEventListener("click", () => {
