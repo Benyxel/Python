@@ -6,7 +6,7 @@
     margin:0;
 }
 
-h1,h2, p{
+h1,h2, h3, p{
     font-family: poppins;
     font-weight: 500;
 }
@@ -18,7 +18,7 @@ h1,h2, p{
     width: 1000px;
     height: 700px;
     transform: translate(-50%,-50%);
-    background: linear-gradient( #f9d6dc, #f6cece);
+    background: linear-gradient(45deg, #ffffff, #f6cef4, rgba(255, 248, 255, 0.616));
     padding: 50px;
     border-radius: 10px;
 }
@@ -66,8 +66,12 @@ h1,h2, p{
 }
 
 .feels{
+    background: linear-gradient(#f8eb31, #f0bc81);
+    padding: 5px 10px;
+    border-radius: 20px;
     display: flex;
     gap: 5px;
+    font-size: 12px;
 }
 .fa-location-dot{
     font-size: 23px;
@@ -96,11 +100,13 @@ h1,h2, p{
 }
 
 .hero{
+    display: flex;
+    justify-content: space-around;
     width: 340px;
     height:180px;
     border-radius: 20px;
     margin-top: 20px;
-    background: linear-gradient(to right, #f68bf4,#6289fe);
+    background: linear-gradient(135deg, #f68bf4,#3f72ff);
     box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.123);
 }
 
@@ -111,4 +117,17 @@ h1,h2, p{
     margin-top: 20px;
     background-color: rgba(241, 241, 241, 0.714);
     box-shadow: 0 0 10px rgba(63, 63, 63, 0.137);
+}
+
+.hl{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.fa-cloud{
+    font-size: 100px;
+    color: white;
+    
 }
