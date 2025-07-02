@@ -7,7 +7,7 @@ const search = document.querySelector("#search"),
     allcity = document.querySelector("#city"),
   country = document.querySelector("#country"),
   date = document.querySelector("#date"),
-  icon = document.querySelector(".fa-cloud")
+  weatherIcon = document.querySelector(".fa-cloud")
 
     
 
@@ -28,7 +28,9 @@ async function weather_fetch(city) {
     day: 'numeric' 
 });
 // Output example: "07:15, Jul 3"
-    icon.innerHTML = data.weather.icon[0]
+    if (data.weather[0].main == "Clouds") {
+      weatherIcon.src = ""
+    }
       
   } catch (error) {
     console.error(error, "An error occoured");
