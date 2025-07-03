@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+
 *{
     padding: 0;
     margin:0;
@@ -64,7 +66,7 @@ h1,h2, h3, p{
     align-items: center;
 }
 
-.feels{
+.date{
     background: linear-gradient(#f8eb31, #f0bc81);
     padding: 5px 10px;
     border-radius: 20px;
@@ -106,16 +108,55 @@ h1,h2, h3, p{
     border-radius: 20px;
     margin-top: 20px;
     background: linear-gradient(135deg, #f68bf4,#3f72ff);
-    box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.123);
+    box-shadow:  0 10px 40px #0000ff3f;
 }
 
 .hero2{
+    
+    width: 340px;
+    height:160px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    box-shadow: 0 0px 0px #3f3f3f23;
+    z-index: -1;
+}
+
+.all{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.alll{
+    width: 140px;
+    justify-content: space-between;
+    
+}
+
+.alllt{
+    display: flex;
+    align-items: baseline; 
+    gap: 5px;
+    font-size: 12px;
+    
+}
+
+.sm{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-content: center;
+}
+
+.hero3{
     width: 340px;
     height:80px;
     border-radius: 20px;
     margin-top: 20px;
-    background-color: rgba(241, 241, 241, 0.714);
-    box-shadow: 0 0 10px rgba(63, 63, 63, 0.137);
+    background-color: #f1f1f1b6;
+    box-shadow: 0 0px 10px #3f3f3f2a;
 }
 
 .hl{
@@ -125,7 +166,10 @@ h1,h2, h3, p{
     justify-content: center;
 }
 
-
+.feels{
+    display: flex;
+    gap: 5px;
+}
 
 #weather-icon {
     

@@ -10,7 +10,10 @@ const search = document.querySelector("#search"),
   weatherIcon = document.querySelector("#weather-icon"),
   des = document.querySelector("#des"),
   day = document.querySelector("#day"),
-  tem = document.querySelector("#tem");
+  tem = document.querySelector("#tem"),
+  feels = document.querySelector("#feels"),
+  low = document.querySelector("#low"),
+  high = document.querySelector("#high");
 
 async function weather_fetch(city) {
   try {
@@ -19,8 +22,8 @@ async function weather_fetch(city) {
     const cityTime = new Date(data.dt * 1000 + data.timezone * 1000);
 
     console.log(data);
-    allcity.innerHTML = data.name;
-    country.innerHTML = `(${data.sys.country})`;
+    allcity.innerHTML = data.name ? data.name : "No city";
+    country.innerHTML = `(${data.sys?.country || "N/A"})`;
     date.innerHTML = cityTime.toLocaleString("en-US", {
       hour: "2-digit",
       minute: "2-digit",
@@ -30,6 +33,9 @@ async function weather_fetch(city) {
     day.innerHTML = cityTime.toLocaleString("en-US", { weekday: "long" });
     des.innerHTML = data.weather[0].description;
     tem.innerHTML = `${data.main.temp.toFixed(0)}°`;
+    feels.innerHTML = `${Math.floor(data.main.feels_like)}°`;
+    low.innerHTML = `${Math.floor(data.main.temp_min)}°`;
+    high.innerHTML = `${Math.floor(data.main.temp_max)}°`;
 
     // Output example: "07:15, Jul 3"
     if (data.weather[0].main == "Clouds") {
