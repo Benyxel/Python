@@ -123,7 +123,7 @@ h1,h2, h3, p{
 }
 
 .all{
-    padding: 30px;
+    padding: 25px;
     display: flex;
     justify-content: space-between;
     

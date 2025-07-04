@@ -25,7 +25,7 @@
                 <h2 id="country"></h2>
             </div>
            <div class="date">
-            <p id="date">0</p>
+            <p id="date">Date</p>
            </div>
            
         </div>
@@ -66,8 +66,8 @@
                         <div class="sm" >
                             <i style="font-size: 40px; color: #ff7300;" class="bi bi-sunset-fill"></i>
                             <div>
-                                <p style="font-size: 10px;" >Sunset</p>
-                                <p style="font-size: 10px;">00</p>
+                                <p  style="font-size: 10px;" >Sunset</p>
+                                <p id="sunset"  style="font-size: 10px;font-weight: 400;">00</p>
                             </div>
                         </div>
 
@@ -75,7 +75,7 @@
                             <i style="font-size: 40px; color: #ffa318;" class="bi bi-sunrise-fill"></i>
                             <div>
                                 <p style="font-size: 10px;" >Sunrise</p>
-                                <p style="font-size: 10px;">00</p>
+                                <p id="sunrise" style="font-size: 10px; font-weight: 400;">00</p>
                             </div>
                         </div>
                 </div>
@@ -90,16 +90,23 @@
                         <div class="sm" >
                             <i style="font-size: 40px; color: #ff7300;" class="bi bi-wind"></i>
                             <div>
-                                <p style="font-size: 10px;" >Sunset</p>
-                                <p id="Sunset" style="font-size: 10px;">00</p>
+                                <p style="font-size: 10px; " >Wind</p>
+                                <div style="display: flex; gap: 2px;">
+                                    <p style="font-size: 10px; font-weight: 400;">Spd:</p>
+                                    <p id="speed" style="font-size: 10px;font-weight: 400;">00</p>
+                                     <p  style="font-size: 10px;font-weight: 400;">deg:</p>
+                                     <p id="deg" style="font-size: 10px;font-weight: 400;">00</p>
+                                </div>
+                                
+                                
                             </div>
                         </div>
 
                         <div class="sm">
                             <i style="font-size: 40px; color: #ffa318;" class="bi bi-brightness-high"></i>
                             <div>
-                                <p style="font-size: 10px;" >Sunrise</p>
-                                <p id="Sunrise style="font-size: 10px;">00</p>
+                                <p style="font-size: 10px;" >UV</p>
+                                <p  style="font-size: 10px;font-weight: 400;">00</p>
                             </div>
                         </div>
                 </div>

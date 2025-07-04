@@ -13,14 +13,19 @@ const search = document.querySelector("#search"),
   tem = document.querySelector("#tem"),
   feels = document.querySelector("#feels"),
   low = document.querySelector("#low"),
-  high = document.querySelector("#high");
+  high = document.querySelector("#high"),
+  sunset = document.querySelector("#sunset"),
+  sunrise = document.querySelector("#sunrise"),
+  speed = document.querySelector("#speed"),
+  deg = document.querySelector("#deg");
 
 async function weather_fetch(city) {
   try {
     const response = await fetch(url + city + `&appid=${apiKey}`);
     const data = await response.json();
     const cityTime = new Date(data.dt * 1000 + data.timezone * 1000);
-
+    const sunriseTime = new Date(data.sys.sunrise * 1000);
+    const sunsetTime = new Date(data.sys.sunset * 1000 );
     console.log(data);
     allcity.innerHTML = data.name ? data.name : "No city";
     country.innerHTML = `(${data.sys?.country || "N/A"})`;
@@ -36,6 +41,16 @@ async function weather_fetch(city) {
     feels.innerHTML = `${Math.floor(data.main.feels_like)}°`;
     low.innerHTML = `${Math.floor(data.main.temp_min)}°`;
     high.innerHTML = `${Math.floor(data.main.temp_max)}°`;
+    sunrise.innerHTML = sunriseTime.toLocaleString("en-US", {
+      hour: "2-digit",
+      minute: "2-digit"
+    });
+    sunset.innerHTML = sunsetTime.toLocaleString("en-US", {
+      hour: "2-digit",
+      minute: "2-digit"
+    });
+    speed.innerHTML = Math.floor(data.wind.speed);
+    deg.innerHTML = `${Math.floor(data.wind.deg)}°`
 
     // Output example: "07:15, Jul 3"
     if (data.weather[0].main == "Clouds") {
