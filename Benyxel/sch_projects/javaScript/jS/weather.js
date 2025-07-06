@@ -17,7 +17,10 @@ const search = document.querySelector("#search"),
   sunset = document.querySelector("#sunset"),
   sunrise = document.querySelector("#sunrise"),
   speed = document.querySelector("#speed"),
-  deg = document.querySelector("#deg");
+  deg = document.querySelector("#deg"),
+  clouds = document.querySelector("#clouds"),
+  press = document.querySelector("#press"),
+  humidi = document.querySelector("#humidi");
 
 async function weather_fetch(city) {
   try {
@@ -49,8 +52,12 @@ async function weather_fetch(city) {
       hour: "2-digit",
       minute: "2-digit"
     });
-    speed.innerHTML = Math.floor(data.wind.speed);
+    speed.innerHTML = Math.floor(data.wind.speed) + "mph";
     deg.innerHTML = `${Math.floor(data.wind.deg)}°`
+    clouds.innerHTML = data.clouds.all + "°";
+    humidi.innerHTML = data.main.humidity + "%";
+    press.innerHTML = data.main.pressure;
+
 
     // Output example: "07:15, Jul 3"
     if (data.weather[0].main == "Clouds") {
