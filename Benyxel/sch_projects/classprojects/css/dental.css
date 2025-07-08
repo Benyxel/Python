@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p ,h1, h2, h3, h4, h5{
+    font-family: roboto;
+}
+
+.top-div{
+    padding:70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(3, 80, 94, 0.918);
+}
+
+.td2{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.td2 span{
+    color: white;
+}
+
+.td2 input{
+    padding: 15px;
+    border-radius: 10px;
+    width: 400px;
+    border:solid 2px white;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+}
+
+.td2 button{
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    margin-left: 10px;
+    font-size: 16px;
+}
