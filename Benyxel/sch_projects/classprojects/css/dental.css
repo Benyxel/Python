@@ -8,11 +8,13 @@ p ,h1, h2, h3, h4, h5{
 }
 
 .top-div{
+    gap: 65px;
     padding:70px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(3, 80, 94, 0.918);
+    flex-direction: column;
+    background-color: #07373fea;
 }
 
 .td2{
@@ -44,4 +46,57 @@ p ,h1, h2, h3, h4, h5{
     border: none;
     margin-left: 10px;
     font-size: 16px;
+}
+
+.top-div img{
+
+    width: 1300px;
+    object-fit: cover;
+    height: 600px;
+    border-radius: 20px;
+    border: solid 5px #178796;
+}
+
+.sec1{
+    margin: 130px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cardbox {
+    justify-content: center;
+    margin-top: 50px;
+    padding: 50px;
+    display: flex;
+    gap: 90px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.sec1 button{
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    color: #ffffffea;
+    background-color:  #07373fea;;
+}
+
+.sec1 img{
+    margin-top: 60px;
+     width: 1300px;
+    object-fit: cover;
+    height: 600px;
+    border-radius: 20px;
+    border: solid 5px #178796;
 }
