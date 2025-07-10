@@ -94,9 +94,11 @@ p ,h1, h2, h3, h4, h5{
 
 .sec1 img{
     margin-top: 60px;
-     width: 1100px;
+     width: 600px;
     object-fit: cover;
-    height: 600px;
+    height: 400px;
     border-radius: 20px;
     border: solid 5px #178796;
 }
+
+
