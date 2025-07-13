@@ -1,14 +1,14 @@
-let input = document.querySelector("#inp").value;
-console.log(input);
-let btn = document.querySelector("#btn");
-let result = document.querySelector("#result")
+// let input = document.querySelector("#inp").value;
+// console.log(input);
+// let btn = document.querySelector("#btn");
+// let result = document.querySelector("#result")
 
-btn.onclick = signup
+// btn.onclick = signup
 
-function signup() {
-    btn.innerHTML = "Account Created"
-    result.innerHTML = `Your name is ${input}`
-}
+// function signup() {
+//     btn.innerHTML = "Account Created"
+//     result.innerHTML = `Your name is ${input}`
+// }
 
 
 
@@ -28,6 +28,7 @@ const text = document.querySelector("#text");
     const num2 = Number(inp2);
     let result = num1 + num2;
     text.innerHTML = result
+    result 
 }
 sum()
 
