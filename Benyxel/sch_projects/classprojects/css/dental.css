@@ -58,7 +58,7 @@ p ,h1, h2, h3, h4, h5, a{
 }
 
 .sec1{
-    margin: 130px;
+    margin: 60px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -117,6 +117,21 @@ p ,h1, h2, h3, h4, h5, a{
     font-weight: 400;
 }
 
+.sec1 h1{
+       font-size: 70px; 
+       font-weight: 500; 
+       color:#07373fea ;
+    }
+.sec1 p {
+    font-size: 20px; 
+    margin-top: 30px;
+}
+.sec2img{
+    display: flex; gap: 
+    20px; margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -130,6 +145,72 @@ p ,h1, h2, h3, h4, h5, a{
 @media screen and (max-width :1200px){
     .navbar{
         display: none;
+    }
+}
+
+@media screen and (min-width: 668px) and (max-width: 1199px){
+    .top-div{
+        padding: 40px;
+        gap: 40px;
+    }
+    
+    .top-div img{
+        width: 90%;
+        max-width: 800px;
+        height: 400px;
+    }
+    
+    .td2 input{
+        width: 80%;
+        max-width: 350px;
+    }
+
+    .td2 h1 {
+        font-size: 50px;
+    }
+    
+    .td2 p{
+        font-size: 18px;
+    }
+
+    .sec1{
+        margin: 80px 40px;
+    }
+    
+    .sec1 h1{
+        font-size: 50px;
+    }
+    
+    .sec1 p{
+        font-size: 18px;
+        max-width: 600px;
+    }
+    
+    .sec1 img{
+        width: 80%;
+        max-width: 500px;
+        height: 300px;
+    }
+
+    .cardbox{
+        padding: 30px;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+    
+    .card{
+        min-width: 200px;
+    }
+    
+    .sec2img{
+        gap: 15px;
+        margin: 15px;
+        flex-wrap: wrap;
+    }
+    
+    .sec2img img{
+        width: 250px;
+        height: 200px;
     }
 }
 
@@ -156,5 +237,32 @@ p ,h1, h2, h3, h4, h5, a{
     }
     .td2 p{
     font-size: 16px;
+    }
+
+    .sec1 h1{
+        margin:  10px;
+        font-size: 30px;
+        width: 400px;
+    }
+    .sec1 p{
+        width: 300px;
+    }
+    .sec1{
+        margin: 40px 0;
+    }
+
+    .cardbox{
+        display: flex;
+        flex-direction: column;
+    }
+    .sec2img{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .sec2img img{
+      width: 200px;
+      height: 200px;
     }
 }
