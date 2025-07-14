@@ -125,6 +125,7 @@ p ,h1, h2, h3, h4, h5, a{
 .sec1 p {
     font-size: 20px; 
     margin-top: 30px;
+    
 }
 .sec2img{
     display: flex; gap: 
@@ -146,6 +147,25 @@ p ,h1, h2, h3, h4, h5, a{
     .navbar{
         display: none;
     }
+    
+    .navbar.toggle{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .navlist{
+        flex-direction: column !important;
+        gap: 15px !important;
+        text-align: center;
+    }
+    
+    .navlist a{
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+        font-size: 16px;
+    }
 }
 
 @media screen and (min-width: 668px) and (max-width: 1199px){
@@ -153,7 +173,9 @@ p ,h1, h2, h3, h4, h5, a{
         padding: 40px;
         gap: 40px;
     }
-    
+    .bi{
+        font-size:45px; color: #fffffff3; background-color: #86a88f63;
+    }
     .top-div img{
         width: 90%;
         max-width: 800px;
@@ -216,6 +238,31 @@ p ,h1, h2, h3, h4, h5, a{
 
 
 @media screen and (max-width :667px){
+    .navbar{
+        display: none;
+    }
+
+    
+    
+    .navbar.toggle{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .navlist{
+        flex-direction: column !important;
+        gap: 20px !important;
+        text-align: center;
+    }
+    
+    .navlist a{
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+        font-size: 18px;
+    }
+    
     .top-div{
         padding: 20px;
         gap: 30px;
@@ -267,3 +314,17 @@ p ,h1, h2, h3, h4, h5, a{
     }
 }
 
+#slidebar{
+ width: 100%;
+ min-height: 80px;
+ background-color: white;
+ transition: all 0.3s ease;
+
+ top: 0;
+ left: 0;
+ z-index: 1000;
+ transform: translateY(-100%); /* Start hidden above viewport */
+}
+#slidebar.toggle{
+ transform: translateY(0); /* Show when toggled */
+}
