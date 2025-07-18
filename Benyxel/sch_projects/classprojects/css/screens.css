@@ -1,0 +1,54 @@
+@media screen and (min-width: 900px){
+    .bi-list{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:899px){
+     .bi-list{
+        display: block;
+    }
+
+    .navbar div li a{
+        display: none;
+    }
+
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    box-shadow: none ;
+    padding: 10px 20px;
+}
+
+#toggle-btn{
+    display: block;
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
+}
+.left-set{
+   margin-left: 0px;
+}
+
+#sidebar.toggle{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 0;
+    background-color: bisque;
+    height: 600px;
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+#sidebar{
+    
+}
+
+
+
+}
+

@@ -4,9 +4,10 @@
 }
 .navbar{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: white;
     box-shadow: 0 0 5px  ;
+    padding: 10px 20px;
 }
 
 .navbar div li a{
@@ -17,22 +18,32 @@
     list-style: none;
 }
 
-.right-set{
-    margin: 30px;
+.left-set{
+    display: flex;
+    margin-left: 60px;
+    align-items: center;
 }
 
 .right-set a{
     font-size: 18px;
-    margin: 0 10px;
+    margin: 0 13px;
     color: black;
 }
+#toggle-btn{
+    display: none;
+}
+
 
 .right-set a:hover{
     background-color: rgba(164, 149, 105, 0.99);
-    padding: 10px 15px;
+    padding: 6px 15px;
     color: white;
     border-radius: 50px;
     transition: 0.4s ease-in-out;
     
+}
+
+.bi-list{
+    font-size: 38px;
 }
 

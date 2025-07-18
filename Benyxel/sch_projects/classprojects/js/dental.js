@@ -1,5 +1,5 @@
-const slidebar = document.querySelector("#slidebar");
-const toggle = document.querySelector("#toggle");
+const slidebar = document.querySelector("#sidebar");
+const toggle = document.querySelector("#toggle-btn");
 
 // Start with navbar hidden (no toggle class initially)
 
