@@ -2,25 +2,84 @@
     .bi-list{
         display: none;
     }
+    
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 10px 20px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .nav-c{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .left-set{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .right-set ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        gap: 30px;
+    }
+    
+    .right-set ul li a{
+        display: block;
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        padding: 10px 15px;
+        transition: color 0.3s ease;
+    }
+    
+    .right-set ul li a:hover{
+        color: #007bff;
+    }
+    
+    #toggle-btn{
+        display: none;
+    }
+    
+    #sidebar{
+        display: block;
+        width: 100%;
+        height: auto;
+        background-color: white;
+    }
 }
 
 
 @media screen and (max-width:899px){
      .bi-list{
         display: block;
+        font-size: 24px;
+        cursor: pointer;
     }
 
-    .navbar div li a{
+    .navbar .right-set ul li a{
         display: none;
     }
-
 
 .navbar{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
+    align-items: center;
     background-color: white;
-    box-shadow: none ;
+    box-shadow: none;
     padding: 10px 20px;
 }
 
@@ -30,8 +89,31 @@
     left: 0;
     margin-left: 20px;
 }
+
+.nav-c{
+    display: flex;
+    flex-direction: column;
+    
+    
+
+}
+
 .left-set{
    margin-left: 0px;
+}
+
+.right-set ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.right-set li {
+    margin: 0;
+}
+
+#sidebar.toggle .left-set{
+    display: none;
 }
 
 #sidebar.toggle{
@@ -40,14 +122,38 @@
     width: 200px;
     padding: 0;
     background-color: bisque;
-    height: 600px;
+    height: 100vh;
     transition: all 0.3s ease;
     opacity: 1;
 }
-#sidebar{
-    
+
+#sidebar.toggle #toggle-btn{
+    order: -1; /* Put toggle button first/on top */
+    position: static;
+    margin: 10px;
+    align-self: flex-start;
 }
 
+#sidebar.toggle .nav-c{
+    order: 1; /* Put nav content after toggle button */
+}
+
+#sidebar.toggle .right-set{
+    order: 2; /* Put menu at the bottom */
+}
+#sidebar{
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+#sidebar.toggle .right-set ul li a {
+    display: block !important; 
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+    margin:  0;
+}
 
 
 }

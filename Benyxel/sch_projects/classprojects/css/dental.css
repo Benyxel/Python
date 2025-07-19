@@ -10,6 +10,11 @@
     padding: 10px 20px;
 }
 
+.nav-c{
+    display: flex;
+    justify-content: space-between;
+}
+
 .navbar div li a{
     text-decoration: none;
     
@@ -43,7 +48,5 @@
     
 }
 
-.bi-list{
-    font-size: 38px;
-}
+
 
