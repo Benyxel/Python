@@ -15,36 +15,46 @@
     justify-content: space-between;
 }
 
-.navbar div li a{
-    text-decoration: none;
-    
-}
-.navbar div li{
-    list-style: none;
-}
-
 .left-set{
     display: flex;
-    margin-left: 60px;
+    margin-left: 40px;
     align-items: center;
 }
 
-.right-set a{
-    font-size: 18px;
-    margin: 0 13px;
-    color: black;
-}
-#toggle-btn{
+
+.bi {
     display: none;
 }
+.right-set{
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+}
 
+.right-set ul li a{
+    font-size: 16px;
+    color:black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+   
+}
+ .right-set ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        gap: 10px;
+    }
 
 .right-set a:hover{
-    background-color: rgba(164, 149, 105, 0.99);
-    padding: 6px 15px;
+    background-color: #c48b0ffc;
     color: white;
     border-radius: 50px;
-    transition: 0.4s ease-in-out;
+    transition: 0.4s ;
     
 }
 
