@@ -8,8 +8,21 @@
     padding: 0!important;
 }
 
-.ain
+.main {
+    justify-content: center !important;
+    background-color: #f0f0f0;
+}
 
 .rightside{
    background-color: antiquewhite;
 }
+
+.sideitems:hover{
+    cursor: pointer;
+    background-color: azure;
+    width: 100%;
+    color: black!important;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
