@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+</head>
+<body>
+    <style>
+        #tilt {
+            background-color: #c0c1c0;
+            width: 500px;
+            text-align: center;
+            padding: 5px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        #tilt:hover{
+            background-color: #e3e3e3;
+           
+        }
+
+        #data{
+            background-color: #e0e1e0;
+            width: 500px;
+            text-align: center;
+            padding: 5px;
+            height: 300px;
+            font-size: 30px;
+            
+        }
+
+    </style>
+    <div id="tilt">
+        click Me</div>
+
+
+    <div id="data">Data page</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+
+
+        $("#tilt").click(()=>{
+            $("#data").slideToggle("slow")
+        }) 
+    </script>
+</body>
+</html>
