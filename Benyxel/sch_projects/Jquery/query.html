@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>hello this is jquery</p>
+    <button id="hide">hide</button>
+    <button id="show">show </button>
+    <button id="show2">main </button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+
+        $("#show2").click(
+            ()=>{
+
+            $("p").toggle()
+
+            }
+        )
+
+        $("#hide").click(
+            () => {
+               $("p").hide()
+            }
+
+        )
+          $("#show").click(
+            () => {
+               $("p").show()
+            }
+
+        )
+
+    </script>
+</body>
+</html>
