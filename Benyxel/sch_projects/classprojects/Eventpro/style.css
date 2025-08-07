@@ -1,0 +1,27 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.bg-cover {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 150px 0;
+    margin-bottom: 0;
+}
+
+.jumbotron {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+footer a {
+    text-decoration: none;
+}
