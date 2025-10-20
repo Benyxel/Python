@@ -11,6 +11,9 @@ class Person(models.Model):
     contact= models.CharField(max_length=255)
     date = models.DateTimeField(auto_now_add=True)
     
+    def __str__(self):
+        return f'{self.first_Name} {self.last_Name}'
+    
 class Note(models.Model):
     id = models.AutoField(primary_key=True)
     user = models.ForeignKey(Person, on_delete=models.CASCADE, default=1001010)
