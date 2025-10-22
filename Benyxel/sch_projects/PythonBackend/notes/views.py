@@ -27,4 +27,6 @@ def login_user(request):
     pass
 
 def logout_user(request):
-    pass
+    logout(request)
+    messages.success(request, "You have been logout")
+    return redirect('home_view')
