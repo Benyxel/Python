@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
+from .forms import SignUpForm
 
 # Create your views here.
 def home_view(request):
@@ -32,4 +33,19 @@ def logout_user(request):
     return redirect('home_view')
 
 def register_user(request):
-    return render(request, 'register.html', {})
+    if request.method == 'POST':
+        form = SignUpForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data['username']
+            password  = form.cleaned_data['password1']
+            user = authenticate(username=username, password=password)
+            login(request, user)
+            messages.success(request, 'You have created an account')
+            return redirect('home_view')
+        
+        
+    else:
+        form = SignUpForm()
+        return render(request, 'register.html', {'form':form})
+    return render(request, 'register.html', {'form':form})
