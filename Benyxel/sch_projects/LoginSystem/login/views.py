@@ -13,4 +13,4 @@ def login(request):
     return render(request, "login")
 
 def logout(request):
-    return render(request, "logout")
+    pass
