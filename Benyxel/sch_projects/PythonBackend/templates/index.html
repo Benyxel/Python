@@ -1,9 +1,48 @@
 {% extends 'base.html' %}
 {% block content %}
 
- <div class="col-md-6 offset-md-3">
-    {% if user.is_authenticated  %}
-    <h1>Welcome to your Dashboard </h1>
+<div class="dashboard">
+  {% if user.is_authenticated  %}
+
+  <div class="sidebar container">
+    <div class="adminc">
+      <h1>Admin</h1>
+      <h4>Welcome username</h4>
+    </div>
+
+    <div class="admind">
+      <h3>Persons</h3>
+      <h3>Notes</h3>
+      
+    </div>
+    
+
+  </div>
+
+ <div class="rightside">
+    <div class="top">
+      <h1>Welcome to your Dashboard</h1>
+    </div>
+
+    <div class="down">
+      <h1>Dashboard Data</h1>
+
+      <div class='Acards'>
+          
+        <div class="cardA">
+          <h1>Person</h1>
+        </div>
+
+      <div class="cardA">
+        <h1>Notes</h1>
+      </div>
+      </div>
+      
+      
+    </div>
+    
+
+
 
     {% else %}
      <h1>Login</h1>
@@ -26,6 +65,7 @@
      </form>
        
  </div>
+</div>
  {% endif%}
 
 {% endblock %}
