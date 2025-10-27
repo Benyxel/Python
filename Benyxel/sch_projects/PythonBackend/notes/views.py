@@ -16,6 +16,8 @@ def read_notes(req):
 def read_single_note(req):
     pass
 
+def notepage(req):
+    return render(req, 'nota_page')
 
 def home_view(request):
     if request.method == 'POST':
