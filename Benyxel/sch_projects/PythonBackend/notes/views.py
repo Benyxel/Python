@@ -11,6 +11,7 @@ def add_user(req):
 
 def read_notes(req):
     all_note = Note.objects.all()
+    return render(req, 'note.html', {'notes': all_note})
     pass
 
 def read_single_note(req):

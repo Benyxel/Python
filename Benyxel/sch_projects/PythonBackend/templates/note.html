@@ -10,11 +10,12 @@
     <a href="#">Add Note</a>
 
     <ul>
-        <li>
-            <a href="#">Note 1</a>
-            <a href="#">Edit</a>
-            <a href="#">Delete</a>
-        </li>
+       {% for each note in notes %}
+       <a href="#">Note 1</a>
+       <a href="#">Edit</a>
+       <a href="#">Delete</a>
+
+       {% endfor %}
     </ul>
 </body>
 </html>
