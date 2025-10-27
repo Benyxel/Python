@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect , get_object_or_404
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from .forms import SignUpForm
@@ -13,7 +13,9 @@ def read_notes(req):
     all_notes = Note.objects.all()
     return render(req, 'note.html', {'notes': all_notes})
 
-
+def read_note_single(req, id):
+    note = get_object_or_404(Note, id=id)
+    return render(req, 'details.html', {'note': note})
 
 def persons(req):
     return render(req, 'persons.html', {})

@@ -13,7 +13,7 @@
     <ul>
         {% for each in notes %}
             <li>
-                <h2 href="#">{{each.title}}</h2>  
+                <a href="{% url 'details_read' each.id %}">{{each.title}}</a>  
                 <a href="#">Delete</a>
                 <a href="#">Edit</a>
             </li>
