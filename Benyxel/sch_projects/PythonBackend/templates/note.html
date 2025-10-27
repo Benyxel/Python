@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,12 +11,13 @@
     <a href="#">Add Note</a>
 
     <ul>
-       
-       <a href="#"></a>
-       <a href="#"></a>
-       <a href="#"></a>
-
-       
+        {% for each in notes %}
+            <li>
+                <a href="#">{{ each.title }}</a>  
+                <a href="#">Delete</a>
+                <a href="#">Edit</a>
+            </li>
+        {% endfor %}
     </ul>
 </body>
 </html>

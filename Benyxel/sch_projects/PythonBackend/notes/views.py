@@ -9,18 +9,18 @@ from .models import Note
 def add_user(req):
     pass
 
-def read_notes(req):
-    all_note = Note.objects.all()
-    pass
 
-def read_single_note(req):
-    pass
 
-def notepage(req):
-    return render(req, 'note.html', {})
+
 
 def persons(req):
     return render(req, 'persons.html', {})
+
+
+
+
+
+
 
 def home_view(request):
     if request.method == 'POST':
@@ -38,9 +38,6 @@ def home_view(request):
             return redirect('home_view')
     else:    
         return render(request,'index.html', {})
-
-
-
 
 def login_user(request):
     pass
