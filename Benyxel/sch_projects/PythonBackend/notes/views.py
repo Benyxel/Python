@@ -11,7 +11,6 @@ def add_user(req):
 
 def read_notes(req):
     all_note = Note.objects.all()
-    return render(req, 'note.html', {'notes': all_note})
     pass
 
 def read_single_note(req):
@@ -20,7 +19,7 @@ def read_single_note(req):
 def notepage(req):
     return render(req, 'note.html', {})
 
-def persons(req):
+def person(req):
     return render(req, 'persons.html', {})
 
 def home_view(request):
