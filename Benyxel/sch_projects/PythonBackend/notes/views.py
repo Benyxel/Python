@@ -2,8 +2,21 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from .forms import SignUpForm
+from .models import Note
 
 # Create your views here.
+
+def add_user(req):
+    pass
+
+def read_notes(req):
+    all_note = Note.objects.all()
+    pass
+
+def read_single_note(req):
+    pass
+
+
 def home_view(request):
     if request.method == 'POST':
         username = request.POST['username']
@@ -33,6 +46,7 @@ def logout_user(request):
     return redirect('home_view')
 
 def register_user(request):
+
     if request.method == 'POST':
         form = SignUpForm(request.POST)
         if form.is_valid():
