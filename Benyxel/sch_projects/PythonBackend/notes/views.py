@@ -19,7 +19,7 @@ def read_single_note(req):
 def notepage(req):
     return render(req, 'note.html', {})
 
-def person(req):
+def persons(req):
     return render(req, 'persons.html', {})
 
 def home_view(request):
