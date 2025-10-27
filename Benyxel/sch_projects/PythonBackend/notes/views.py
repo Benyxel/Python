@@ -9,7 +9,9 @@ from .models import Note
 def add_user(req):
     pass
 
-
+def read_notes(req):
+    all_notes = Note.objects.all()
+    return render(req, 'note.html', {'notes': all_notes})
 
 
 
