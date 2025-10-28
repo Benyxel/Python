@@ -12,7 +12,7 @@ class Person(models.Model):
     date = models.DateTimeField(auto_now_add=True)
     
     def __str__(self):
-        return f'{self.first_Name} {self.last_Name}'
+        return f'{self.first_name} {self.last_name}'
     
 class Note(models.Model):
     id = models.AutoField(primary_key=True)
