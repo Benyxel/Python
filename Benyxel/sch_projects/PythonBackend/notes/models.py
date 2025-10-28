@@ -3,8 +3,8 @@ from django.db import models
 # Create your models here.   
 class Person(models.Model):
     id = models.AutoField(primary_key=True)
-    first_Name = models.CharField(max_length=255, null=False, blank=False)
-    last_Name = models.CharField(max_length=255, null=False, blank=False)
+    first_name = models.CharField(max_length=255, null=False, blank=False)
+    last_name = models.CharField(max_length=255, null=False, blank=False)
     username =models.CharField(max_length=255, null=False, blank=False)
     email = models.EmailField(unique=True, null=False, blank=False)
     location=models.CharField(max_length=255)

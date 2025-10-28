@@ -12,9 +12,12 @@
 <div class="dashboard">
     <div class="sidebar container">
         <div class="adminc">
-        <h1>Admin</h1>
-        <h4>Welcome username</h4>
-        </div>
+      {% for person in persons %}
+      <h1>{{ person.username }}</h1>
+      
+      <h4>{{ person.first_name }} {{ person.last_name }}</h4>
+       {% endfor %}
+      </div>
 
         <div class="admind">
         <a href="{% url 'home_view' %}"><h3>Dashboard</h3></a> 
@@ -30,7 +33,7 @@
         <table class="table">
             {% for person in persons %}
             <tr>
-                <td><p>{{ person.first_Name }} {{ person.last_Name }}</p> </td>
+                <td><p>{{ person.first_name }} {{ person.last_name }}</p> </td>
                 <td><p>{{ person.username }} </p></td>
                 <td><p>{{ person.email }} </p></td>
                 <td><p>{{ person.location }} </p></td>

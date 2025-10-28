@@ -10,16 +10,18 @@ def add_user(req):
     pass
 
 def read_notes(req):
+    persons = Person.objects.all()  
     all_notes = Note.objects.all()
-    return render(req, 'note.html', {'notes': all_notes})
+    return render(req, 'note.html', {'notes': all_notes, 'persons': persons })
 
 def read_note_single(req, id):
     note = get_object_or_404(Note, id=id)
-    return render(req, 'details.html', {'note': note})
+    return render(req, 'details.html', {'note': note},  )
 
 def persons(req):
+    persons = Person.objects.all()  
     all_persons = Person.objects.all() 
-    return render(req, 'persons.html', {'persons': all_persons})
+    return render(req, 'persons.html', {'persons': all_persons, 'persons': persons})
 
 
 
