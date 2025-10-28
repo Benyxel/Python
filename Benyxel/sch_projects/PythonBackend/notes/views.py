@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect , get_object_or_404
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from .forms import SignUpForm
-from .models import Note
+from .models import Note, Person
 
 # Create your views here.
 
@@ -18,7 +18,8 @@ def read_note_single(req, id):
     return render(req, 'details.html', {'note': note})
 
 def persons(req):
-    return render(req, 'persons.html', {})
+    all_persons = Person.objects.all() 
+    return render(req, 'persons.html', {'persons': all_persons})
 
 
 

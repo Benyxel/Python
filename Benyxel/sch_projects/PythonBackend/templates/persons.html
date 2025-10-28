@@ -7,5 +7,15 @@
 </head>
 <body>
     <h1>users</h1>
+
+    {% for person in persons %}
+    <p>{{ person.first_Name }} {{ person.last_Name }}</p>
+    <p>{{ person.username }} </p>
+    <p>{{ person.email }} </p>
+    <p>{{ person.location }} </p>
+    <p>{{ person.contact }} </p>
+    <p>{{ person.date }} </p>
+
+    {% endfor %}
 </body>
 </html>
