@@ -10,10 +10,10 @@ def add_user(req):
     pass
 
 def read_notes(req):
-    notes_count = Note.objects.count()
+   
     persons = Person.objects.all()  
     all_notes = Note.objects.all()
-    return render(req, 'note.html', {'notes': all_notes, 'persons': persons, 'notes_count': notes_count })
+    return render(req, 'note.html', {'notes': all_notes, 'persons': persons,  })
 
 def read_note_single(req, id):
     note = get_object_or_404(Note, id=id)
@@ -45,10 +45,11 @@ def home_view(request):
             messages.success(request, ' There was an Erorr logging in, Please try again ')
         
             return redirect('home_view')
-    else:
+    else: 
+        notes_count = Note.objects.count()
         persons_count = Person.objects.count()
         persons = Person.objects.all()   
-        return render(request,'index.html', {'persons': persons, 'persons_count': persons_count})
+        return render(request,'index.html', {'persons': persons, 'persons_count': persons_count, 'notes_count': notes_count})
 
 def login_user(request):
     pass
