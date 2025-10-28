@@ -1,12 +1,15 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
+
 
 html, body {
     height: 100%;
     overflow: hidden;
     font-size: 10px;
+    text-decoration: none;
 }
 
 
@@ -50,8 +53,9 @@ html, body {
     justify-content:start;
     align-items: center;
     width: 85%;
-    gap:50px
+    gap:0px
 }
+
 
 .tableA{
     display: flex;
@@ -61,11 +65,7 @@ html, body {
    padding: 20px;
 }
 
-.down{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
+
 
 .Acards{
     width: 900px;

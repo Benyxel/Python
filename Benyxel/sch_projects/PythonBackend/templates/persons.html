@@ -26,44 +26,34 @@
         </div>
     </div>
         
-    <div class="rightside ">
-    <div class="container">
-        <h1>users</h1>
-        
-        <table class="table">
-            {% for person in persons %}
-            <tr>
-                <td><p>{{ person.first_name }} {{ person.last_name }}</p> </td>
-                <td><p>{{ person.username }} </p></td>
-                <td><p>{{ person.email }} </p></td>
-                <td><p>{{ person.location }} </p></td>
-                <td><p>{{ person.contact }} </p></td>
-                <td><p>{{ person.date }} </p></td>
-                <td>
-                    <a href="#">Edit</a>
-                    <a href="#">Delete</a>
-                </td>
-                <td></td>
-            </tr>
-            {% endfor %}
-        </table>
+    <div class="rightside text-decoration-none">
+        <div>
+            <h1>Users</h1>
+        </div>
 
-
-            
-        
-        
-        
-        
-        
-        
-        
-    </div>
-    </div>
-
-
+        <div class=" container fs-4 ">
+            <table class="table">
+                {% for person in persons %}
+                <tr>
+                    <td><p>{{ person.first_name }} {{ person.last_name }}</p> </td>
+                    <td><p>{{ person.username }} </p></td>
+                    <td><p>{{ person.email }} </p></td>
+                    <td><p>{{ person.location }} </p></td>
+                    <td><p>{{ person.contact }} </p></td>
+                    <td><p>{{ person.date }} </p></td>
+                    <td >
+                        <div>
+                            
+                        </div>
+                        <a href="#">Edit</a>
+                        <a href="#">Delete</a>
+                    </td>
+                    <td></td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
 </div>
-   
-
     
 </body>
 </html>
