@@ -10,9 +10,10 @@ def add_user(req):
     pass
 
 def read_notes(req):
+    notes_count = Note.objects.count()
     persons = Person.objects.all()  
     all_notes = Note.objects.all()
-    return render(req, 'note.html', {'notes': all_notes, 'persons': persons })
+    return render(req, 'note.html', {'notes': all_notes, 'persons': persons, 'notes_count': notes_count })
 
 def read_note_single(req, id):
     note = get_object_or_404(Note, id=id)
@@ -21,7 +22,7 @@ def read_note_single(req, id):
 def persons(req):
     persons = Person.objects.all()  
     all_persons = Person.objects.all() 
-    return render(req, 'persons.html', {'persons': all_persons, 'persons': persons})
+    return render(req, 'persons.html', {'persons': all_persons, 'persons': persons  })
 
 
 
@@ -45,8 +46,9 @@ def home_view(request):
         
             return redirect('home_view')
     else:
+        persons_count = Person.objects.count()
         persons = Person.objects.all()   
-        return render(request,'index.html', {'persons': persons})
+        return render(request,'index.html', {'persons': persons, 'persons_count': persons_count})
 
 def login_user(request):
     pass
