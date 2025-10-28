@@ -1,3 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,16 +9,57 @@
     <title>Persons</title>
 </head>
 <body>
-    <h1>users</h1>
+<div class="dashboard">
+    <div class="sidebar container">
+        <div class="adminc">
+        <h1>Admin</h1>
+        <h4>Welcome username</h4>
+        </div>
 
-    {% for person in persons %}
-    <p>{{ person.first_Name }} {{ person.last_Name }}</p>
-    <p>{{ person.username }} </p>
-    <p>{{ person.email }} </p>
-    <p>{{ person.location }} </p>
-    <p>{{ person.contact }} </p>
-    <p>{{ person.date }} </p>
+        <div class="admind">
+        <a href="{% url 'home_view' %}"><h3>Dashboard</h3></a> 
+        <a href="{% url 'persons' %}"><h3>Persons</h3></a>
+        <a href="{% url 'allnotes' %}"><h3>Notes</h3></a> 
+        </div>
+    </div>
+        
+    <div class="rightside ">
+    <div class="container">
+        <h1>users</h1>
+        
+        <table class="table">
+            {% for person in persons %}
+            <tr>
+                <td><p>{{ person.first_Name }} {{ person.last_Name }}</p> </td>
+                <td><p>{{ person.username }} </p></td>
+                <td><p>{{ person.email }} </p></td>
+                <td><p>{{ person.location }} </p></td>
+                <td><p>{{ person.contact }} </p></td>
+                <td><p>{{ person.date }} </p></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+
+            
+        
+        
+        
+        
+        
+        <a href="#">Edit</a>
+        <a href="#">Delete</a>
+        
+    </div>
+    </div>
+
+
+</div>
+   
 
     {% endfor %}
 </body>
 </html>
+
+{% endblock %}

@@ -53,6 +53,10 @@ html, body {
     gap:50px
 }
 
+.tableA{
+    display: flex;
+}
+
 .top{
    padding: 20px;
 }

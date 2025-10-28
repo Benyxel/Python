@@ -1,4 +1,5 @@
-
+{% extends 'base.html' %}
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +8,28 @@
     <title>list of notes</title>
 </head>
 <body>
+
+
+    <div class="dashboard">
+    <div class="sidebar container">
+        <div class="adminc">
+      {% for person in persons %}
+      <h1>{{ person.username }}</h1>
+      
+      <h4>{{ person.first_Name }} {{ person.last_Name }}</h4>
+       {% endfor %}
+      </div>
+
+        <div class="admind">
+        <a href="{% url 'home_view' %}"><h3>Dashboard</h3></a> 
+        <a href="{% url 'persons' %}"><h3>Persons</h3></a>
+        <a href="{% url 'allnotes' %}"><h3>Notes</h3></a> 
+        
+        </div>
+    </div>
+        
+
+    <div class="rightside">
     <h1>My Notes</h1>
     <a href="#">Add Note</a>
 
@@ -20,5 +43,8 @@
         {% endfor %}
         
     </ul>
+    </div>
+    </div>
 </body>
 </html>
+{% endblock %}

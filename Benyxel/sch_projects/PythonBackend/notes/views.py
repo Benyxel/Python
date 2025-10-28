@@ -28,6 +28,7 @@ def persons(req):
 
 
 def home_view(request):
+    
     if request.method == 'POST':
         username = request.POST['username']
         password = request.POST['password']
@@ -41,8 +42,9 @@ def home_view(request):
             messages.success(request, ' There was an Erorr logging in, Please try again ')
         
             return redirect('home_view')
-    else:    
-        return render(request,'index.html', {})
+    else:
+        persons = Person.objects.all()   
+        return render(request,'index.html', {'persons': persons})
 
 def login_user(request):
     pass
