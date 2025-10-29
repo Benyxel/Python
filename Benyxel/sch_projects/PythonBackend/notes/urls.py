@@ -9,5 +9,7 @@ urlpatterns = [
     path('read_notes/', views.read_notes, name = 'allnotes'),
     path('persons/', views.persons, name= 'persons'),
     path('details/<int:id>', views.read_note_single, name = 'details_read' ),
-    path('add_user', views.add_user, name= 'adduser' )
+    path('add_user', views.add_user, name= 'adduser' ),
+    path('update_user/<int:id>', views.update_user , name = 'updateuser'),
+    path('delete_user/<int:id>', views.delete_user , name = 'deleteuser')
 ]

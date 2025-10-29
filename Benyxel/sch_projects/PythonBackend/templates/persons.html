@@ -43,7 +43,22 @@
                 </div>
                 
             <table class="table">
+                 <thead>
+                        <tr>
+                            
+                            <th>Full Name</th>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>Location</th>
+                            <th>Contact</th>
+                            <th>Date & Time</th>
+                            <th>Actions</th>
+                            
+                        </tr>
+                    </thead>
                 {% for person in persons %}
+                   
+
                 <tr >
                     <td><p>{{ person.first_name }} {{ person.last_name }}</p> </td>
                     <td><p>{{ person.username }} </p></td>

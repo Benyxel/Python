@@ -19,7 +19,7 @@ def add_user(req):
     return render(req, "adduser.html", {"form": form})
     
     # Update
-def update(req, id):
+def update_user(req, id):
     user = get_object_or_404(Person, id = id)
     if req.method == 'POST':
         form = Add_user(req.POST, instance= user)
