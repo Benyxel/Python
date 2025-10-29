@@ -1,13 +1,43 @@
 from django.shortcuts import render, redirect , get_object_or_404
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
-from .forms import SignUpForm
-from .models import Note, Person
+from .forms import SignUpForm, Add_user
+from .models import Note, Person 
 
 # Create your views here.
-
+# ADDUSER
 def add_user(req):
-    pass
+    if req.method =="POST":
+        form = Add_user(req.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(req, 'New User Added Successful')
+            return redirect('persons')
+        
+    else:
+        form = Add_user()
+    return render(req, "adduser.html", {"form": form})
+    
+    # Update
+def update(req, id):
+    user = get_object_or_404(Person, id = id)
+    if req.method == 'POST':
+        form = Add_user(req.POST, instance= user)
+        if form.is_valid():
+            form.save()
+            
+            return redirect('adduser')
+    else:
+        form = Add_user(instance= user)
+    return render(req, 'update.html', {'form':form})
+
+# Delete
+def delete_user(req, id):
+    user = get_object_or_404(Person, id = id)
+    if req.method == 'POST':
+        user.delete()
+    return redirect('persons')
+    
 
 def read_notes(req):
    
@@ -27,8 +57,7 @@ def persons(req):
 
 
 
-
-
+# Home view
 
 def home_view(request):
     

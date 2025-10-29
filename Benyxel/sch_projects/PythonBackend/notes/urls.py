@@ -8,5 +8,6 @@ urlpatterns = [
     path('register/', views.register_user, name='register') ,
     path('read_notes/', views.read_notes, name = 'allnotes'),
     path('persons/', views.persons, name= 'persons'),
-    path('details/<int:id>', views.read_note_single, name = 'details_read' )
+    path('details/<int:id>', views.read_note_single, name = 'details_read' ),
+    path('add_user', views.add_user, name= 'adduser' )
 ]

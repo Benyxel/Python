@@ -1,6 +1,16 @@
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django import forms
+from .models import Person
+
+
+
+class Add_user(forms.ModelForm):
+    class Meta:
+        model = Person
+        fields = "__all__"
+    
+    
 
 class SignUpForm(UserCreationForm):
     email = forms.EmailField(label='', widget=forms.TextInput(attrs={'class':'form-control','placeholder':'Email Address'}))
