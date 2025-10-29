@@ -63,12 +63,12 @@ html, body {
 .upper{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 a{
     text-decoration: none;
-    color: black;
+    
 }
 
 .tableA{
@@ -76,12 +76,36 @@ a{
 }
 
 .lower{
-    padding: 50px;
+    border-radius: 5px;
+    height: 500px;
+    padding-top: 10px;
+    padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.106) 0px 3px 8px;
     background-color: rgb(243, 243, 243);
    
 }
 
+.adduserF{
+    padding-bottom: 20px;
+    display: flex;
+    justify-content:space-between ;
+}
+
+.btnuser{
+    border: none;
+    padding: 10px 15px;
+    background-color: rgb(98, 108, 119);
+    color: white;
+    border-radius: 5px;
+}
+
+.btnuser:hover{
+    background-color:rgb(25, 44, 65); ;
+}
+
+.btnuser a{
+    color: white;
+}
 
 
 
